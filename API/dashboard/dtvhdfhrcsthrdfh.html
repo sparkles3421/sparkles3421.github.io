@@ -2,19 +2,7 @@
 <html lang="en-US">
   <head>
     <title>Dashboard</title>
-    <script src="appp.js"></script>
-    <script type="module" id="main_frame">
-      import fs from 'fs'
-      function write() {
-        // Data which will write in a file.
-        let data = "Local status: "+stat
-
-        // Write data in 'Output.txt' .
-        fs.writeFile('Output.txt', data, (err) => {
-          if (err) throw err;
-        })
-      }
-    </script>
+    <script src="app.js"></script>
     <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
     <script src="//unpkg.com/brain.js"></script>
     <link rel="icon" type="image/png" href="favicon.png">
