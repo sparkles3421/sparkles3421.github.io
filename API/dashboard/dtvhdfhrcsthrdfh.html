@@ -1,8 +1,50 @@
-<html>
+<!--<!DOCTYPE html>-->
+<html lang="en-US">
   <head>
-    
+    <title>Dashboard</title>
+    <script src="app.js"></script>
+    <script type="module" id="main_frame">
+      const fs = require('fs')
+      function write() {
+        // Data which will write in a file.
+        let data = "Local status: "+stat
+
+        // Write data in 'Output.txt' .
+        fs.writeFile('Output.txt', data, (err) => {
+          if (err) throw err;
+        })
+      }
+    </script>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <script src="//unpkg.com/brain.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+      #taskbrprog {
+        width: 99%;
+        background-color: #ddd;
+      }
+      
+      #taskbrmetric {
+        width: 1%;
+        height: 30px;
+        background-color: #04AA6D;
+      }
+      #textprog {
+        background-color: transparent;
+        opacity: 1;
+      }
+      #textprogtext {
+        width: 1%;
+        height: 30px;
+        background-color: transparent;
+        opacity: 1;
+      }
+      </style>
   </head>
   <body>
-    
-  </body
+    <div style="width: 100%;height: 100%;" id="paswall">
+      <textarea style="flex:2%;width: 100%;height:50%;scale: none;resize: none;text-align: center;font-size: 200%;background-color: blue;" id="pass"></textarea>
+      <button style="width: 100%;height:50%;background-color: blueviolet;font-size: 500%;" onclick="ent()">Enter</button>
+    </div>
+</body>
 </html>
