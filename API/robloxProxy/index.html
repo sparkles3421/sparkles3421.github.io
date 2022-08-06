@@ -1,0 +1,31 @@
+<html>
+  <head>
+     <script>
+      var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+      getJSON('https://games.roblox.com/v1/games/9475245286/servers/Public?sortOrder=Asc&limit=100',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+   this.body.InnerHtml = data
+  }
+});
+    </script>
+    </html>
+  <body>
+   
+  </body>
+</html>
