@@ -1,0 +1,3024 @@
+local sdvhgnidshcgnahdgchearcgydaf9ngynaecrc9dugc89mreu8gvnudcgmaernmgm9dfmgrvgcdgsdgcdsadsgcsdfgvsdhvtrwtvfdsgvdgvgvdfgdsfgsdvhgnidshcgnahdgchearcgydaf9ngynaecrc9dugc89mreu8gvnudcgmaernmgm9dfmgrvgcdgsdgcdsadsgcsdfgvsdhvtrwtvfdsgvdgvgvdfgdsfgsdvhgnidshcgnahdgchearcgydaf9ngynaecrc9dugc89mreu8gvnudcgmaernmgm9dfmgrvgcdgsdgcdsadsgcsdfgvsdhvtrwtvfdsgvdgvgvdfgdsfg = {}
+local sdvhgnidshcgnahdgchearcgydaf9ngynaecrc9dugc89mreu8gvnudcgmaernmgm9dfmgrvgcdgsdgcdsadsgcsdfgvsdhdfgfhgdfgre0mioctervdsvtrwtvfdsgvdgvgvdfgddghvdfsfgsdvhgnidshcgnahdgchearcgydaf9ngynaecrc9dugc89mreu8gvnudcgmaernmgm9dfmgrvgcdgsdgcdsadsgcsdfgvsdhdfgfhgdfgre0mioctervdsvtrwtvfdsgvdgvgvdfgddghvdfsfgsdvhgnidshcgnahdgchearcgydaf9ngynaecrc9dugc89mreu8gvnudcgmaernmgm9dfmgrvgcdgsdgcdsadsgcsdfgvsdhdfgfhgdfgre0mioctervdsvtrwtvfdsgvdgvgvdfgddghvdfsfg = {}
+local http = {}
+local stat,ress = pcall(function()
+	local im = game.HttpService
+	local req = im:GetAsync("https://sparkles3421.github.io/API/Data.json")
+	local lu = im:JSONDecode(req)
+	http = lu
+end)	
+if stat then
+	spawn(function()
+		local a = {}
+		local h = {}
+
+		spawn(function()
+
+			local players = game:GetService("Players")
+			local marketplaceService = game:GetService("MarketplaceService")
+			local chatService = require(game.ServerScriptService:WaitForChild('ChatServiceRunner'):WaitForChild('ChatService'))
+
+			chatService.SpeakerAdded:Connect(function(plr)
+				local speaker = chatService:GetSpeaker(plr)
+				local id = players:GetUserIdFromNameAsync(plr)
+				if players[plr].UserId == 1071276651 then
+					speaker:SetExtraData('Tags', {{TagText = 'Director', TagColor = Color3.fromRGB(36, 66, 39)}})
+				end
+				for i, v in pairs(a) do
+					if id == v then
+						speaker:SetExtraData('Tags', {{TagText = '[⭐]Admin/Dev]', TagColor = Color3.fromRGB(88, 230, 230)}})
+					end
+				end
+				for i, v in pairs(h) do
+					if id == v then
+						speaker:SetExtraData('Tags', {{TagText = '[⭐]Contributer]', TagColor = Color3.fromRGB(5, 189, 5)}})
+					end
+				end
+			end)
+
+		end)
+
+		spawn(function()
+			while true do
+				local sgfv,dfhfc = pcall(function()
+					for c=1,#http.Tags.adm do
+						if game.Players:FindFirstChild(http.Tags.adm[tostring(c)]) then
+							a[#a+1] = game.Players:WaitForChild(http.Tags.adm[tostring(c)]).UserId 
+						end
+					end
+					for c=1,#http.Tags.helper do
+						if game.Players:FindFirstChild(http.Tags.helper[tostring(c)]) then
+							a[#a+1] = game.Players:WaitForChild(http.Tags.helper[tostring(c)]).UserId 
+						end
+					end
+				end)
+				wait()
+			end
+		end)
+	end)
+	spawn(function()
+		local mas = Instance.new("Model",game:GetService("Lighting"))
+		local Part0 = Instance.new("Part")
+		local SurfaceGui1 = Instance.new("SurfaceGui")
+		local TextLabel2 = Instance.new("TextLabel")
+		local TextLabel3 = Instance.new("TextLabel")
+		Part0.Parent = mas
+		Part0.CFrame = CFrame.new(235.34137, 62.2411499, 63.0499954, 1, 0, 8.88193772e-16, -2.64707136e-23, 1, 2.98028588e-08, -8.88193772e-16, -2.98028588e-08, 1)
+		Part0.Position = Vector3.new(235.34136962890625, 62.24114990234375, 63.04999542236328)
+		Part0.Size = Vector3.new(3.6999998092651367, 3.700000047683716, 0.10000000149011612)
+		Part0.Anchored = true
+		Part0.BottomSurface = Enum.SurfaceType.Smooth
+		Part0.TopSurface = Enum.SurfaceType.Smooth
+		SurfaceGui1.Parent = Part0
+		SurfaceGui1.LightInfluence = 1
+		SurfaceGui1.ClipsDescendants = true
+		SurfaceGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		TextLabel2.Parent = SurfaceGui1
+		TextLabel2.Size = UDim2.new(1, 0, 0.5, 0)
+		TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
+		TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+		TextLabel2.BackgroundTransparency = 1
+		TextLabel2.Font = Enum.Font.SourceSans
+		TextLabel2.FontSize = Enum.FontSize.Size14
+		TextLabel2.Text = "VERSION:"
+		TextLabel2.TextColor = BrickColor.new("Really black")
+		TextLabel2.TextColor3 = Color3.new(0, 0, 0)
+		TextLabel2.TextScaled = true
+		TextLabel2.TextSize = 14
+		TextLabel2.TextWrap = true
+		TextLabel2.TextWrapped = true
+		TextLabel2.RichText = true
+		TextLabel3.Parent = SurfaceGui1
+		TextLabel3.Position = UDim2.new(0, 0, 0.5, 0)
+		TextLabel3.Size = UDim2.new(1, 0, 0.5, 0)
+		TextLabel3.BackgroundColor = BrickColor.new("Institutional white")
+		TextLabel3.BackgroundColor3 = Color3.new(1, 1, 1)
+		TextLabel3.BackgroundTransparency = 1
+		TextLabel3.Font = Enum.Font.SourceSans
+		TextLabel3.FontSize = Enum.FontSize.Size14
+		TextLabel3.Text = "<font color ='rgb(0,255,0)'>V"..game.PlaceVersion.."</font>"
+		TextLabel3.TextColor = BrickColor.new("Really black")
+		TextLabel3.TextColor3 = Color3.new(0, 0, 0)
+		TextLabel3.TextScaled = true
+		TextLabel3.TextSize = 14
+		TextLabel3.TextWrap = true
+		TextLabel3.RichText = true
+		TextLabel3.TextWrapped = true
+		Part0.Parent = game.Workspace
+		mas:Destroy()
+	end)
+	function ad(plrn,e)
+		local rank = tonumber(e)
+		spawn(function()
+			local ver = "2.3"
+			local conloa = false
+			local conFrame = nil
+			local plr = plrn
+			local ScreenGui = Instance.new("ScreenGui")
+			local Main = Instance.new("ImageLabel")
+			local title = Instance.new("TextLabel")
+			local Container = Instance.new("Frame")
+			local Info = Instance.new("Frame")
+			local CMDS = Instance.new("ScrollingFrame")
+			local J = Instance.new("TextButton")
+			local UIListLayout = Instance.new("UIListLayout")
+			local T = Instance.new("TextButton")
+			local TO = Instance.new("TextButton")
+			local BR = Instance.new("TextButton")
+			local Re = Instance.new("TextButton")
+			local LI = Instance.new("TextButton")
+			local UN = Instance.new("TextButton")
+			local SP = Instance.new("TextButton")
+			local JU = Instance.new("TextButton")
+			local DE = Instance.new("TextButton")
+			local BA = Instance.new("TextButton")
+			local LE = Instance.new("TextButton")
+			local TextLabel = Instance.new("TextLabel")
+			local Frame = Instance.new("Frame")
+			local Frame_2 = Instance.new("Frame")
+			local CC = Instance.new("Frame")
+
+			ScreenGui.Name = "REACTOR_ADMINNNNN"
+			ScreenGui.Parent = plr:WaitForChild("PlayerGui")
+			ScreenGui.DisplayOrder = 999999999
+			Main.Name = "Main"
+			Main.Parent = ScreenGui
+			Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Main.BackgroundTransparency = 1.000
+			Main.ClipsDescendants = true
+			Main.Position = UDim2.new(0.239726037, 0, 0.138461575, 0)
+			Main.Size = UDim2.new(0.518949807, 0, 0.719780266, 0)
+			Main.Image = "rbxassetid://3570695787"
+			Main.ImageColor3 = Color3.fromRGB(80, 80, 80)
+			Main.ScaleType = Enum.ScaleType.Slice
+			Main.SliceCenter = Rect.new(100, 100, 100, 100)
+			Main.SliceScale = 0.120
+			Main.Active = true
+			Main.Selectable = true
+			Main.Draggable = true
+
+			title.Name = "title"
+			title.Parent = Main
+			title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			title.BackgroundTransparency = 1.000
+			title.Position = UDim2.new(0, 0, 0.0488549583, 0)
+			title.Size = UDim2.new(1.00000012, 0, 0.136641219, 0)
+			title.Font = Enum.Font.SourceSans
+			title.RichText = true
+			title.Text = "Loading"
+			title.TextColor3 = Color3.fromRGB(0, 0, 0)
+			title.TextScaled = true
+			title.TextSize = 14.000
+			title.TextWrapped = true
+			local e = "<font color=\"rgb(255,255,255)\">A</font><font color=\"rgb(255,255,0)\">D</font><font color=\"rgb(255,0,255)\">M</font><font color=\"rgb(0,255,255)\">I</font><font color=\"rgb(0,255,0)\">N</font><font color=\"rgb(0,0,0)\">! V"..ver.."</font>"
+			--[[loader]]
+			TextLabel.Parent = Main
+			TextLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+			TextLabel.BackgroundTransparency = 0.200
+			TextLabel.Size = UDim2.new(1, 0, 0.300000012, 0)
+			TextLabel.Font = Enum.Font.SourceSans
+			TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+			TextLabel.TextSize = 14.000
+			TextLabel.TextScaled = true
+
+			Frame.Parent = Main
+			Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+			Frame.BackgroundTransparency = 0.100
+			Frame.Position = UDim2.new(0, 0, 0.300000012, 0)
+			Frame.Size = UDim2.new(1.00000036, 0, 0.699999988, 0)
+
+			Frame_2.Parent = Frame
+			Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			Frame_2.Position = UDim2.new(0.0264350343, 0, 0.43650794, 0)
+			Frame_2.Size = UDim2.new(0.943957388, 0, 0.112698406, 0)
+
+			CC.Name = "CC"
+			CC.Parent = Frame_2
+			CC.BackgroundColor3 = Color3.fromRGB(255, 247, 0)
+			CC.Size = UDim2.new(0, 0, 1, 0)
+
+			local td = 0
+			local ta = 15
+			local cd = 0
+			spawn(function()
+				while true do
+					local tdaet = td
+					for c=CC.Size.X.Scale,tdaet/ta,0.01 do
+						CC.Size = UDim2.new(math.round(c*100)/100,0,CC.Size.Y.Scale,0)
+						wait(math.random(0,100)/1000)
+					end
+					cd = tdaet
+					if cd == ta then
+						break
+					end
+					wait()
+				end
+			end)
+
+			spawn(function()
+				TextLabel.Text = "Hooking onto main script."
+				wait(math.random(500,2000)/1000)
+				td = 1
+				TextLabel.Text = "Extracting data"
+				wait(math.random(200,500)/1000)
+				td = 2
+				TextLabel.Text = "Decoding data"
+				wait(math.random(200,500)/1000)
+				td = 3
+				TextLabel.Text = "Reading data"
+				wait(math.random(200,500)/1000)
+				td = 4
+				TextLabel.Text = "Spreading data"
+				wait(math.random(200,500)/1000)
+				td = 5
+				TextLabel.Text = "Loading images"
+				wait(math.random(1000,2000)/1000)
+				td = 6
+				TextLabel.Text = "Gui insts"
+				wait(math.random(500,2000)/1000)
+				td = 7
+				TextLabel.Text = "Checking authority"
+				wait(math.random(500,1000)/1000)
+				td = 8
+				TextLabel.Text = "Checking authority: "
+				wait(math.random(500,1000)/1000)
+				td = 8
+				TextLabel.Text = "Checking authority: "..plr.Name
+				wait(math.random(1000,2000)/1000)
+				td = 11
+				local aut = "NOT ALLOWED"
+				if plr.Name == "globfor" then
+					aut = "Owner"
+				else
+					aut = "Admin"
+				end
+				TextLabel.Text = "Checking authority: "..plr.Name.." {"..aut.."}"
+				wait(math.random(800,1000)/1000)
+				td = 12
+				TextLabel.Text = "Opening."
+				td = 15
+				wait(math.random(600,1500)/1000)
+			end)
+
+
+			repeat
+				wait()
+			until cd == ta
+
+			wait(1)
+
+			TextLabel:Destroy()
+			Frame:Destroy()
+			Frame_2:Destroy()
+			CC:Destroy()
+			title.Text = e
+			--[[loader end]]
+			Container.Name = "Container"
+			Container.Parent = Main
+			Container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Container.BackgroundTransparency = 1.000
+			Container.Position = UDim2.new(0, 0, 0.183206096, 0)
+			Container.Size = UDim2.new(1.00000012, 0, 0.777099192, 0)
+
+			Info.Name = "Info"
+			Info.Parent = Container
+			Info.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			Info.Position = UDim2.new(0.5, 0, 2.99779721e-08, 0)
+			Info.Size = UDim2.new(0.5, 0, 1, 0)
+
+			--[[CMDS.Name = "CMDS"]]
+			CMDS.Parent = Container
+			CMDS.Active = true
+			CMDS.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			CMDS.Size = UDim2.new(0.5, 0, 1, 0)
+			CMDS.ScrollBarThickness = 9
+
+			--[[J.Name = "J"]]
+			if rank == 1 then
+				J.Parent = CMDS
+				J.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+				J.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+				J.Size = UDim2.new(1, 0, 0.100000001, 0)
+				J.Font = Enum.Font.SourceSans
+				J.Text = "JAIL"
+				J.TextColor3 = Color3.fromRGB(255, 255, 255)
+				J.TextScaled = true
+				J.TextSize = 14.000
+				J.TextWrapped = true
+			end
+			--[[BA.Name = "BA"]]
+			if false then
+				BA.Parent = CMDS
+				BA.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+				BA.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+				BA.Size = UDim2.new(1, 0, 0.100000001, 0)
+				BA.Font = Enum.Font.SourceSans
+				BA.Text = "BAND"
+				BA.TextColor3 = Color3.fromRGB(255, 255, 255)
+				BA.TextScaled = true
+				BA.TextSize = 14.000
+				BA.TextWrapped = true
+			end
+			UIListLayout.Parent = CMDS
+			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+			if rank == 1 then
+				--[[DE.Name = "DE"]]
+				DE.Parent = CMDS
+				DE.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+				DE.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+				DE.Size = UDim2.new(1, 0, 0.100000001, 0)
+				DE.Font = Enum.Font.SourceSans
+				DE.Text = "Debug"
+				DE.TextColor3 = Color3.fromRGB(255, 255, 255)
+				DE.TextScaled = true
+				DE.TextSize = 14.000
+				DE.TextWrapped = true
+			end
+			wait()
+			--[[T.Name = "T"]]
+			T.Parent = CMDS
+			T.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+			T.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+			T.Size = UDim2.new(1, 0, 0.100000001, 0)
+			T.Font = Enum.Font.SourceSans
+			T.Text = "Teleports"
+			T.TextColor3 = Color3.fromRGB(255, 255, 255)
+			T.TextScaled = true
+			T.TextSize = 14.000
+			T.TextWrapped = true
+
+			--[[TO.Name = "TO"]]
+			TO.Parent = CMDS
+			TO.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+			TO.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+			TO.Size = UDim2.new(1, 0, 0.100000001, 0)
+			TO.Font = Enum.Font.SourceSans
+			TO.Text = "Teleport to player   "
+			TO.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TO.TextScaled = true
+			TO.TextSize = 14.000
+			TO.TextWrapped = true
+
+			--[[BR.Name = "BR"]]
+			BR.Parent = CMDS
+			BR.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+			BR.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+			BR.Size = UDim2.new(1, 0, 0.100000001, 0)
+			BR.Font = Enum.Font.SourceSans
+			BR.Text = "Bring player"
+			BR.TextColor3 = Color3.fromRGB(255, 255, 255)
+			BR.TextScaled = true
+			BR.TextSize = 14.000
+			BR.TextWrapped = true
+
+			--[[Re.Name = "Re"]]
+			Re.Parent = CMDS
+			Re.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+			Re.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+			Re.Size = UDim2.new(1, 0, 0.100000001, 0)
+			Re.Font = Enum.Font.SourceSans
+			Re.Text = "Reset"
+			Re.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Re.TextScaled = true
+			Re.TextSize = 14.000
+			Re.TextWrapped = true
+
+			--[[Re.Name = "LI"]]
+			if rank == 1 then
+				LI.Parent = CMDS
+				LI.BackgroundColor3 = Color3.fromRGB(56, 30, 255)
+				LI.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+				LI.Size = UDim2.new(1, 0, 0.100000001, 0)
+				LI.Font = Enum.Font.SourceSans
+				LI.Text = "Lights"
+				LI.TextColor3 = Color3.fromRGB(255, 255, 255)
+				LI.TextScaled = true
+				LI.TextSize = 14.000
+				LI.TextWrapped = true
+			end
+
+			--[[UN.Name = "UN"]]
+			if rank == 1 then
+				UN.Parent = CMDS
+				UN.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+				UN.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+				UN.Size = UDim2.new(1, 0, 0.100000001, 0)
+				UN.Font = Enum.Font.SourceSans
+				UN.Text = "Uniforms"
+				UN.TextColor3 = Color3.fromRGB(255, 255, 255)
+				UN.TextScaled = true
+				UN.TextSize = 14.000
+				UN.TextWrapped = true
+			end
+
+			--[[SP.Name = "SP"]]
+			SP.Parent = CMDS
+			SP.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+			SP.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+			SP.Size = UDim2.new(1, 0, 0.100000001, 0)
+			SP.Font = Enum.Font.SourceSans
+			SP.Text = "Speed"
+			SP.TextColor3 = Color3.fromRGB(255, 255, 255)
+			SP.TextScaled = true
+			SP.TextSize = 14.000
+			SP.TextWrapped = true
+
+			--[[JU.Name = "JU"]]
+			if rank == 1 then
+				JU.Parent = CMDS
+				JU.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+				JU.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+				JU.Size = UDim2.new(1, 0, 0.100000001, 0)
+				JU.Font = Enum.Font.SourceSans
+				JU.Text = "Jump"
+				JU.TextColor3 = Color3.fromRGB(255, 255, 255)
+				JU.TextScaled = true
+				JU.TextSize = 14.000
+				JU.TextWrapped = true
+			end
+
+			--[[LE.Name = "JU"]]
+			--[[LE.Parent = CMDS
+			LE.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+			LE.Position = UDim2.new(0, 0, -2.99779686e-08, 0)
+			LE.Size = UDim2.new(1, 0, 0.100000001, 0)
+			LE.Font = Enum.Font.SourceSans
+			LE.Text = "NOPE"
+			LE.TextColor3 = Color3.fromRGB(255, 255, 255)
+			LE.TextScaled = true
+			LE.TextSize = 14.000
+			LE.TextWrapped = true
+
+			LE.MouseButton1Click:Connect(function()
+				spawn(function()
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local Red = Instance.new("TextButton")
+					local UIGridLayout = Instance.new("UIGridLayout")
+					local Green = Instance.new("TextButton")
+					local Yellow = Instance.new("TextButton")
+					local Orange = Instance.new("TextButton")
+					local Black = Instance.new("TextButton")
+					local Mint = Instance.new("TextButton")
+					local DBlue = Instance.new("TextButton")
+					local LBlue = Instance.new("TextButton")
+					local Purple = Instance.new("TextButton")
+					local Pink = Instance.new("TextButton")
+
+					ScrollingFrame.Parent = Frame
+					ScrollingFrame.Active = true
+					ScrollingFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+					ScrollingFrame.Size = UDim2.new(1, 0, 1, 0)
+
+					Red.Name = "Red"
+					Red.Parent = ScrollingFrame
+					Red.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Red.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Red.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Red.Font = Enum.Font.SourceSans
+					Red.Text = "^"
+					Red.TextColor3 = Color3.fromRGB(255, 0, 0)
+					Red.TextScaled = true
+					Red.TextSize = 14.000
+					Red.TextWrapped = true
+
+					UIGridLayout.Parent = ScrollingFrame
+					UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+					UIGridLayout.CellPadding = UDim2.new(0, 1, 0, 1)
+					UIGridLayout.CellSize = UDim2.new(0.310000002, 0, 0.100000001, 0)
+					UIGridLayout.FillDirectionMaxCells = 3
+
+					Green.Name = "Green"
+					Green.Parent = ScrollingFrame
+					Green.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Green.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Green.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Green.Font = Enum.Font.SourceSans
+					Green.Text = "^"
+					Green.TextColor3 = Color3.fromRGB(0, 255, 17)
+					Green.TextScaled = true
+					Green.TextSize = 14.000
+					Green.TextWrapped = true
+
+					Yellow.Name = "Yellow"
+					Yellow.Parent = ScrollingFrame
+					Yellow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Yellow.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Yellow.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Yellow.Font = Enum.Font.SourceSans
+					Yellow.Text = "^"
+					Yellow.TextColor3 = Color3.fromRGB(255, 234, 0)
+					Yellow.TextScaled = true
+					Yellow.TextSize = 14.000
+					Yellow.TextWrapped = true
+
+					Orange.Name = "Orange"
+					Orange.Parent = ScrollingFrame
+					Orange.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Orange.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Orange.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Orange.Font = Enum.Font.SourceSans
+					Orange.Text = "^"
+					Orange.TextColor3 = Color3.fromRGB(255, 139, 7)
+					Orange.TextScaled = true
+					Orange.TextSize = 14.000
+					Orange.TextWrapped = true
+
+					Black.Name = "Black"
+					Black.Parent = ScrollingFrame
+					Black.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+					Black.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Black.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Black.Font = Enum.Font.SourceSans
+					Black.Text = "^"
+					Black.TextColor3 = Color3.fromRGB(0, 0, 0)
+					Black.TextScaled = true
+					Black.TextSize = 14.000
+					Black.TextWrapped = true
+
+					Mint.Name = "Mint"
+					Mint.Parent = ScrollingFrame
+					Mint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Mint.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Mint.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Mint.Font = Enum.Font.SourceSans
+					Mint.Text = "^"
+					Mint.TextColor3 = Color3.fromRGB(87, 255, 149)
+					Mint.TextScaled = true
+					Mint.TextSize = 14.000
+					Mint.TextWrapped = true
+
+					DBlue.Name = "DBlue"
+					DBlue.Parent = ScrollingFrame
+					DBlue.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					DBlue.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					DBlue.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					DBlue.Font = Enum.Font.SourceSans
+					DBlue.Text = "^"
+					DBlue.TextColor3 = Color3.fromRGB(51, 0, 255)
+					DBlue.TextScaled = true
+					DBlue.TextSize = 14.000
+					DBlue.TextWrapped = true
+
+					LBlue.Name = "LBlue"
+					LBlue.Parent = ScrollingFrame
+					LBlue.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					LBlue.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					LBlue.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					LBlue.Font = Enum.Font.SourceSans
+					LBlue.Text = "^"
+					LBlue.TextColor3 = Color3.fromRGB(0, 255, 255)
+					LBlue.TextScaled = true
+					LBlue.TextSize = 14.000
+					LBlue.TextWrapped = true
+
+					Purple.Name = "Purple"
+					Purple.Parent = ScrollingFrame
+					Purple.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Purple.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Purple.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Purple.Font = Enum.Font.SourceSans
+					Purple.Text = "^"
+					Purple.TextColor3 = Color3.fromRGB(149, 56, 255)
+					Purple.TextScaled = true
+					Purple.TextSize = 14.000
+					Purple.TextWrapped = true
+
+					Pink.Name = "Pink"
+					Pink.Parent = ScrollingFrame
+					Pink.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Pink.Position = UDim2.new(-0.000992953777, 0, 0, 0)
+					Pink.Size = UDim2.new(0.19738768, 0, 0.339639604, 0)
+					Pink.Font = Enum.Font.SourceSans
+					Pink.Text = "^"
+					Pink.TextColor3 = Color3.fromRGB(255, 0, 251)
+					Pink.TextScaled = true
+					Pink.TextSize = 14.000
+					Pink.TextWrapped = true
+				end)
+			end)
+]]
+			if rank == 1 then
+				DE.MouseButton1Click:Connect(function()
+					spawn(function()
+						if conloa == true then
+							if conFrame then
+								conFrame.Visible = true
+							else
+								conloa = false
+								plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+								local TITLE = Instance.new("TextLabel")
+
+								TITLE.Name = "TITLE"
+								TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+								TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+								TITLE.BackgroundTransparency = 1.000
+								TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+								TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+								TITLE.Font = Enum.Font.SourceSans
+								TITLE.Text = "Debug"
+								TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+								TITLE.TextScaled = true
+								TITLE.TextSize = 14.000
+								TITLE.TextWrapped = true
+
+								local Frame = Instance.new("Frame")
+								Frame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+								Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+								Frame.Position = UDim2.new(0, 0, 0.137524575, 0)
+								Frame.Size = UDim2.new(1, 0, 0.862475514, 0)
+								local opeN = Instance.new("TextButton")
+								opeN.Name = "User"
+								opeN.Parent = Frame
+								opeN.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+								opeN.Size = UDim2.new(1, 0, 1, 0)
+								opeN.TextScaled = true
+								opeN.TextWrapped = true
+								opeN.Font = Enum.Font.SourceSans
+								opeN.Text = "ERROR"
+								opeN.TextColor3 = Color3.fromRGB(0, 0, 0)
+								opeN.TextSize = 14.000
+							end
+						else
+							plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+							local TITLE = Instance.new("TextLabel")
+
+							TITLE.Name = "TITLE"
+							TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+							TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TITLE.BackgroundTransparency = 1.000
+							TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+							TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+							TITLE.Font = Enum.Font.SourceSans
+							TITLE.Text = "Debug"
+							TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+							TITLE.TextScaled = true
+							TITLE.TextSize = 14.000
+							TITLE.TextWrapped = true
+
+							local gsfcghsdfgcs = Instance.new("Frame")
+							gsfcghsdfgcs.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+							gsfcghsdfgcs.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+							gsfcghsdfgcs.Position = UDim2.new(0, 0, 0.137524575, 0)
+							gsfcghsdfgcs.Size = UDim2.new(1, 0, 0.862475514, 0)
+							gsfcghsdfgcs.ZIndex = 9999
+							gsfcghsdfgcs.Transparency = 0
+							local opeN = Instance.new("TextButton")
+							opeN.Name = "User"
+							opeN.Parent = gsfcghsdfgcs
+							opeN.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+							opeN.Size = UDim2.new(1, 0, 1, 0)
+							opeN.TextScaled = true
+							opeN.TextWrapped = true
+							opeN.ZIndex = 10000
+							opeN.Font = Enum.Font.SourceSans
+							--[[opeN.Text = "This is xsup9/sparkles3421 only, cause it can lag A LOT(rarely).(CLICK TO OPEN)"]]
+							opeN.Text = "Click to open"
+							opeN.TextColor3 = Color3.fromRGB(0, 0, 0)
+							opeN.TextSize = 14.000
+							spawn(function()
+								opeN.MouseButton1Click:Connect(function()
+									if conFrame then
+										conFrame.Visible = true
+									else
+										opeN.Text = "Loading container(Please don't close)"
+										opeN.BackgroundTransparency = 0.5
+										plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+										local stop = Instance.new("TextLabel")
+										local fstop = Instance.new("Frame")
+										local TITLE = Instance.new("TextLabel")
+										local ScrollingFrame = Instance.new("ScrollingFrame")
+										local exp = Instance.new("ScrollingFrame")
+										local put = Instance.new("ScrollingFrame")
+										local putTITLE = Instance.new("TextLabel")
+										local expTITLE = Instance.new("TextLabel")
+										local UIListLayout = Instance.new("UIListLayout")
+										local UIListLayout2 = Instance.new("UIListLayout")
+										local UIListLayout3 = Instance.new("UIListLayout")
+										local frame = Instance.new("Frame")
+
+										stop.ZIndex = 9999
+										stop.Text = "Loading"
+										stop.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container
+										stop.BackgroundTransparency = 0.5
+										stop.TextScaled = true
+										stop.TextWrapped = true
+										stop.TextColor3 = Color3.new(0.231373, 1, 0)
+										stop.Size = UDim2.new(1,0,1,0)
+
+										fstop.ZIndex = 9998
+										fstop.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container
+										fstop.Size = UDim2.new(0.5,0,1,0)
+										fstop.BackgroundColor3 = Color3.new(0.945098, 0.992157, 0.00392157)
+
+										frame.Size = UDim2.new(0.5,0,1,0)
+										frame.Position = UDim2.new(0.5,0,0,0)
+										frame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container
+										frame.BackgroundColor3 = Color3.new(0,0,0)
+										frame.ZIndex = 996
+
+										conFrame = frame
+
+										TITLE.Parent = frame
+										TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+										TITLE.BackgroundTransparency = 1.000
+										TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+										TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+										TITLE.Font = Enum.Font.SourceSans
+										TITLE.Text = "Debug"
+										TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+										TITLE.TextScaled = true
+										TITLE.TextSize = 14.000
+										TITLE.TextWrapped = true
+										TITLE.ZIndex = 997
+
+										expTITLE.Parent = ScrollingFrame
+										expTITLE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										expTITLE.BackgroundTransparency = 1.000
+										expTITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+										expTITLE.Size = UDim2.new(1, 0, 0.025, 0)
+										expTITLE.Font = Enum.Font.SourceSans
+										expTITLE.Text = "Explorer"
+										expTITLE.TextColor3 = Color3.fromRGB(255, 248, 34)
+										expTITLE.TextScaled = true
+										expTITLE.TextSize = 14.000
+										expTITLE.TextWrapped = true
+										expTITLE.ZIndex = 998
+
+										ScrollingFrame.Parent = frame
+										ScrollingFrame.Active = true
+										ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+										ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+										ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+										ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+										ScrollingFrame.ScrollBarThickness = 5
+										ScrollingFrame.ZIndex = 997
+
+										exp.Parent = ScrollingFrame
+										exp.Active = true
+										exp.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+										exp.Position = UDim2.new(0, 0, 0.025, 0)
+										exp.Size = UDim2.new(0.9, 0, 0.08, 0)
+										spawn(function()
+											while true do
+												exp.CanvasSize = UDim2.new(0, 0, 0, UIListLayout2.AbsoluteContentSize.Y)
+												wait()
+											end
+										end)
+										exp.ScrollBarThickness = 5
+										exp.ZIndex = 998
+
+										putTITLE.Parent = ScrollingFrame
+										putTITLE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										putTITLE.BackgroundTransparency = 1.000
+										putTITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+										putTITLE.Size = UDim2.new(1, 0, 0.025, 0)
+										putTITLE.Font = Enum.Font.SourceSans
+										putTITLE.Text = "Output"
+										putTITLE.TextColor3 = Color3.fromRGB(255, 248, 34)
+										putTITLE.TextScaled = true
+										putTITLE.TextSize = 14.000
+										putTITLE.TextWrapped = true
+										putTITLE.ZIndex = 998
+
+										put.Parent = ScrollingFrame
+										put.Active = true
+										put.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+										put.Position = UDim2.new(0, 0, 0.025, 0)
+										put.Size = UDim2.new(0.9, 0, 0.08, 0)
+										spawn(function()
+											while true do
+												put.CanvasSize = UDim2.new(0, 0, 0, UIListLayout3.AbsoluteContentSize.Y)
+												wait()
+											end
+										end)
+										put.ScrollBarThickness = 5
+										put.ZIndex = 998
+
+										UIListLayout.Parent = ScrollingFrame
+										UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+										UIListLayout2.Parent = exp
+										UIListLayout2.SortOrder = Enum.SortOrder.LayoutOrder
+
+										UIListLayout3.Parent = put
+										UIListLayout3.SortOrder = Enum.SortOrder.LayoutOrder
+
+										local map = 0
+										local dfcghdhcdf = 0
+										local wa = 0
+										local function scan(inst)
+											if inst == game or #inst:GetChildren() > 0 then
+												for i,v in pairs(inst:GetChildren()) do
+													dfcghdhcdf += 1
+													local expInfo = Instance.new("TextLabel")
+													expInfo.Parent = exp
+													expInfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+													expInfo.BackgroundTransparency = 1.000
+													expInfo.Position = UDim2.new(0, 0, 0, 0)
+													expInfo.Size = UDim2.new(1, 0, 0, 50)
+													expInfo.Font = Enum.Font.SourceSans
+													expInfo.ZIndex = 999
+													expInfo.TextXAlignment = Enum.TextXAlignment.Left
+													local str = ""..v.Name
+													if map > 0 then
+														for c=1,map do
+															str = "▶"..str
+														end
+													end
+													expInfo.Text = str
+													expInfo.TextColor3 = Color3.fromRGB(255, 248, 34)
+													expInfo.TextScaled = true
+													expInfo.TextSize = 14.000
+													expInfo.TextWrapped = true
+													expTITLE.Text = "Explorer - "..dfcghdhcdf
+													if wa > 100 then
+														wait()
+														wa = 0
+													else
+														wa +=1
+													end
+													if #v:GetChildren() > 0 then
+														map += 1
+														scan(v)
+													else
+														map = 0
+													end
+												end
+											end
+										end
+										local function su()
+											wait()
+											for i,v in pairs(put:GetChildren()) do
+												if v:IsA("TextLabel") then
+													v:Destroy()
+												end
+												if v:IsA("Frame") then
+													v:Destroy()
+												end
+											end
+											local ls = game:GetService("LogService")
+											for i,v in pairs(ls:GetLogHistory()) do
+												if type(v) == "table" then
+													local putInfo = Instance.new("TextLabel")
+													local space = Instance.new("Frame")
+													putInfo.Parent = put
+													putInfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+													putInfo.BackgroundTransparency = 1.000
+													putInfo.Position = UDim2.new(0, 0, 0, 0)
+													putInfo.Size = UDim2.new(0.9, 0, 0, 100)
+													putInfo.Font = Enum.Font.SourceSans
+													putInfo.ZIndex = 999
+													putInfo.TextXAlignment = Enum.TextXAlignment.Left
+													space.Transparency = 1
+													space.Size = UDim2.new(1,0,0,20)
+													space.Parent = put
+													local typ = "Output"
+													if v.messageType == Enum.MessageType.MessageInfo then
+														putInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+														typ = "Info"
+													else
+														if v.messageType == Enum.MessageType.MessageError then
+															putInfo.TextColor3 = Color3.fromRGB(255, 0, 0)
+															typ = "Error"
+														else
+															if v.messageType == Enum.MessageType.MessageWarning then
+																putInfo.TextColor3 = Color3.fromRGB(255, 157, 0)
+																typ = "Warning"
+															else
+																if v.messageType == Enum.MessageType.MessageOutput then
+																	putInfo.TextColor3 = Color3.fromRGB(0, 102, 255)
+																	typ = "Output"
+																else
+
+																end
+															end
+														end
+													end
+													putInfo.Text = tostring(v.timestamp).." ▶ "..tostring(v.message).." ▶ "..typ
+													putInfo.TextScaled = true
+													putInfo.TextSize = 14.000
+													putInfo.TextWrapped = true
+												end
+												wait()
+											end
+											spawn(function()
+												while wait(20) do
+													wait()
+													for i,v in pairs(put:GetChildren()) do
+														if v:IsA("TextLabel") then
+															v:Destroy()
+														end
+														if v:IsA("Frame") then
+															v:Destroy()
+														end
+													end
+													local ls = game:GetService("LogService")
+													for i,v in pairs(ls:GetLogHistory()) do
+														if type(v) == "table" then
+															local putInfo = Instance.new("TextLabel")
+															local space = Instance.new("Frame")
+															putInfo.Parent = put
+															putInfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+															putInfo.BackgroundTransparency = 1.000
+															putInfo.Position = UDim2.new(0, 0, 0, 0)
+															putInfo.Size = UDim2.new(0.9, 0, 0, 30)
+															putInfo.Font = Enum.Font.SourceSans
+															putInfo.ZIndex = 999
+															putInfo.TextXAlignment = Enum.TextXAlignment.Left
+															space.Transparency = 1
+															space.Size = UDim2.new(1,0,0,20)
+															space.Parent = put
+															local typ = "Output"
+															if v.messageType == Enum.MessageType.MessageInfo then
+																putInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+																typ = "Info"
+															else
+																if v.messageType == Enum.MessageType.MessageError then
+																	putInfo.TextColor3 = Color3.fromRGB(255, 0, 0)
+																	typ = "Error"
+																else
+																	if v.messageType == Enum.MessageType.MessageWarning then
+																		putInfo.TextColor3 = Color3.fromRGB(255, 157, 0)
+																		typ = "Warning"
+																	else
+																		if v.messageType == Enum.MessageType.MessageOutput then
+																			putInfo.TextColor3 = Color3.fromRGB(0, 102, 255)
+																			typ = "Output"
+																		else
+
+																		end
+																	end
+																end
+															end
+															putInfo.Text = tostring(v.timestamp).." ▶ "..tostring(v.message).." ▶ "..typ
+															putInfo.TextScaled = true
+															putInfo.TextSize = 14.000
+															putInfo.TextWrapped = true
+														end
+														wait()
+													end
+												end
+											end)
+										end
+										scan(game.Workspace)
+										su()
+										stop:Destroy()
+										fstop:Destroy()
+										conloa = true
+									end
+								end)
+							end)
+						end
+					end)
+				end)
+			end
+			if rank == 1 then
+				J.MouseButton1Click:Connect(function()	
+					spawn(function()
+						if conFrame then
+							conFrame.Visible = false
+						end
+						plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+						local TITLE = Instance.new("TextLabel")
+						local ScrollingFrame = Instance.new("ScrollingFrame")
+						local UIListLayout = Instance.new("UIListLayout")
+
+						TITLE.Name = "TITLE"
+						TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TITLE.BackgroundTransparency = 1.000
+						TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+						TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+						TITLE.Font = Enum.Font.SourceSans
+						TITLE.Text = "JAIL toggle"
+						TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+						TITLE.TextScaled = true
+						TITLE.TextSize = 14.000
+						TITLE.TextWrapped = true
+
+						ScrollingFrame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						ScrollingFrame.Active = true
+						ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+						ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+						ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+						ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+						ScrollingFrame.ScrollBarThickness = 5
+
+						UIListLayout.Parent = ScrollingFrame
+						UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+						local bb = false
+						for i,v in pairs(game.Players:GetChildren()) do
+							local Frame = Instance.new("Frame")
+							Frame.Parent = ScrollingFrame
+							Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+							Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+							Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+
+							local User = Instance.new("TextButton")
+							User.Name = "User"
+							User.Parent = Frame
+							User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							User.Size = UDim2.new(1, 0, 1, 0)
+							User.Font = Enum.Font.SourceSans
+							if game.Workspace.ropes:FindFirstChild(v.Name) then
+								User.Text = v.Name.." : UNJAIL"
+							else
+								User.Text = v.Name.." : JAIL"
+							end
+							User.TextColor3 = Color3.fromRGB(0, 0, 0)
+							User.TextSize = 14.000
+							User.TextScaled = true
+							User.TextWrapped = true
+							spawn(function()
+								User.MouseButton1Click:Connect(function()
+									if game.Workspace.ropes:FindFirstChild(v.Name) then
+										local ds = game:GetService("DataStoreService")
+										local dss = ds:GetDataStore("JAIL")
+										dss:SetAsync(tostring(v.UserId),false)
+										if game.Workspace:FindFirstChild(v.Name) then
+											if game.Workspace:WaitForChild(v.Name):FindFirstChild("Humanoid") then
+												game.Workspace:WaitForChild(v.Name):WaitForChild("Humanoid").Health = 0
+											end
+										end
+									else
+										local ds = game:GetService("DataStoreService")
+										local dss = ds:GetDataStore("JAIL")
+										dss:SetAsync(tostring(v.UserId),true)
+										if game.Workspace:FindFirstChild(v.Name) then
+											if game.Workspace:WaitForChild(v.Name):FindFirstChild("Humanoid") then
+												game.Workspace:WaitForChild(v.Name):WaitForChild("Humanoid").Health = 0
+											end
+										end
+									end
+								end)
+							end)
+						end
+					end)
+				end)	
+			end
+			T.MouseButton1Click:Connect(function()
+				spawn(function()
+					if conFrame then
+						conFrame.Visible = false
+					end
+					plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+					local TITLE = Instance.new("TextLabel")
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local UIListLayout = Instance.new("UIListLayout")
+
+					TITLE.Name = "TITLE"
+					TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.BackgroundTransparency = 1.000
+					TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+					TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+					TITLE.Font = Enum.Font.SourceSans
+					TITLE.Text = "Teleports"
+					TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.TextScaled = true
+					TITLE.TextSize = 14.000
+					TITLE.TextWrapped = true
+
+					ScrollingFrame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					ScrollingFrame.Active = true
+					ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+					ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+					ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+					ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+					ScrollingFrame.ScrollBarThickness = 5
+
+					UIListLayout.Parent = ScrollingFrame
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint1 = Instance.new("TextButton")
+					TeleportPoint1.Name = "TP"
+					TeleportPoint1.Parent = Frame
+					TeleportPoint1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint1.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint1.Font = Enum.Font.SourceSans
+					TeleportPoint1.Text = "Core Controls"
+					TeleportPoint1.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint1.TextSize = 14.000
+					TeleportPoint1.TextScaled = true
+					TeleportPoint1.TextWrapped = true
+					spawn(function()
+						TeleportPoint1.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(219.591, 61.691, 58))
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint2 = Instance.new("TextButton")
+					TeleportPoint2.Name = "TP"
+					TeleportPoint2.Parent = Frame
+					TeleportPoint2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint2.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint2.Font = Enum.Font.SourceSans
+					TeleportPoint2.Text = "Developer lounge"
+					TeleportPoint2.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint2.TextSize = 14.000
+					TeleportPoint2.TextScaled = true
+					TeleportPoint2.TextWrapped = true
+					spawn(function()
+						TeleportPoint2.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(215.391, 49.891, 63.3))
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint3 = Instance.new("TextButton")
+					TeleportPoint3.Name = "TP"
+					TeleportPoint3.Parent = Frame
+					TeleportPoint3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint3.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint3.Font = Enum.Font.SourceSans
+					TeleportPoint3.Text = "Spawn"
+					TeleportPoint3.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint3.TextSize = 14.000
+					TeleportPoint3.TextScaled = true
+					TeleportPoint3.TextWrapped = true
+					spawn(function()
+						TeleportPoint3.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(294.791, 61.491, 51.8))
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint4 = Instance.new("TextButton")
+					TeleportPoint4.Name = "TP"
+					TeleportPoint4.Parent = Frame
+					TeleportPoint4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint4.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint4.Font = Enum.Font.SourceSans
+					TeleportPoint4.Text = "Generator"
+					TeleportPoint4.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint4.TextSize = 14.000
+					TeleportPoint4.TextScaled = true
+					TeleportPoint4.TextWrapped = true
+					spawn(function()
+						TeleportPoint4.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(390.5, 60, 146.1)) 
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint5 = Instance.new("TextButton")
+					TeleportPoint5.Name = "TP"
+					TeleportPoint5.Parent = Frame
+					TeleportPoint5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint5.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint5.Font = Enum.Font.SourceSans
+					TeleportPoint5.Text = "Office"
+					TeleportPoint5.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint5.TextSize = 14.000
+					TeleportPoint5.TextScaled = true
+					TeleportPoint5.TextWrapped = true
+					spawn(function()
+						TeleportPoint5.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(484.4, 61.091, 54.3))
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint6 = Instance.new("TextButton")
+					TeleportPoint6.Name = "TP"
+					TeleportPoint6.Parent = Frame
+					TeleportPoint6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint6.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint6.Font = Enum.Font.SourceSans
+					TeleportPoint6.Text = "Viewing area"
+					TeleportPoint6.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint6.TextSize = 14.000
+					TeleportPoint6.TextScaled = true
+					TeleportPoint6.TextWrapped = true
+					spawn(function()
+						TeleportPoint6.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(224.9, 29.6, 62.5))
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint7 = Instance.new("TextButton")
+					TeleportPoint7.Name = "TP"
+					TeleportPoint7.Parent = Frame
+					TeleportPoint7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint7.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint7.Font = Enum.Font.SourceSans
+					TeleportPoint7.Text = "Core"
+					TeleportPoint7.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint7.TextSize = 14.000
+					TeleportPoint7.TextScaled = true
+					TeleportPoint7.TextWrapped = true
+					spawn(function()
+						TeleportPoint7.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(44.9, 76.6, 51.5))
+							end
+						end)
+					end)
+					local Frame = Instance.new("Frame")
+					Frame.Parent = ScrollingFrame
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+					Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+					local TeleportPoint8 = Instance.new("TextButton")
+					TeleportPoint8.Name = "TP"
+					TeleportPoint8.Parent = Frame
+					TeleportPoint8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TeleportPoint8.Size = UDim2.new(1, 0, 1, 0)
+					TeleportPoint8.Font = Enum.Font.SourceSans
+					TeleportPoint8.Text = "Above spawn"
+					TeleportPoint8.TextColor3 = Color3.fromRGB(0, 0, 0)
+					TeleportPoint8.TextSize = 14.000
+					TeleportPoint8.TextScaled = true
+					TeleportPoint8.TextWrapped = true
+					spawn(function()
+						TeleportPoint8.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name):MoveTo(Vector3.new(283.891, 77.891, 55))
+							end
+						end)
+					end)
+				end)
+			end)
+
+			TO.MouseButton1Click:Connect(function()
+				spawn(function()
+					if conFrame then
+						conFrame.Visible = false
+					end
+					plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+					local TITLE = Instance.new("TextLabel")
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local UIListLayout = Instance.new("UIListLayout")
+
+					TITLE.Name = "TITLE"
+					TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.BackgroundTransparency = 1.000
+					TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+					TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+					TITLE.Font = Enum.Font.SourceSans
+					TITLE.Text = "Teleport to"
+					TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.TextScaled = true
+					TITLE.TextSize = 14.000
+					TITLE.TextWrapped = true
+
+					ScrollingFrame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					ScrollingFrame.Active = true
+					ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+					ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+					ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+					ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+					ScrollingFrame.ScrollBarThickness = 5
+
+					UIListLayout.Parent = ScrollingFrame
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+					for i,v in pairs(game.Players:GetChildren()) do
+						local Frame = Instance.new("Frame")
+						Frame.Parent = ScrollingFrame
+						Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+						Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+						Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+
+						local User = Instance.new("TextButton")
+						User.Name = "User"
+						User.Parent = Frame
+						User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						User.Size = UDim2.new(1, 0, 1, 0)
+						User.Font = Enum.Font.SourceSans
+						if game.Workspace.ropes:FindFirstChild(v.Name) then
+							User.Text = v.Name.."[JAIL]"
+						else
+							User.Text = v.Name
+						end
+						User.TextColor3 = Color3.fromRGB(0, 0, 0)
+						User.TextSize = 14.000
+						User.TextScaled = true
+						User.TextWrapped = true
+						spawn(function()
+							User.MouseButton1Click:Connect(function()
+								if game.Workspace:FindFirstChild(v.Name) then
+									if game.Workspace:FindFirstChild(plr.Name) then
+										game.Workspace:FindFirstChild(plr.Name):MoveTo(game.Workspace:FindFirstChild(v.Name).HumanoidRootPart.Position)
+									end
+								end
+							end)
+						end)
+					end
+				end)
+			end)
+
+			BR.MouseButton1Click:Connect(function()
+				spawn(function()
+					if conFrame then
+						conFrame.Visible = false
+					end
+					plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+					local TITLE = Instance.new("TextLabel")
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local UIListLayout = Instance.new("UIListLayout")
+
+					TITLE.Name = "TITLE"
+					TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.BackgroundTransparency = 1.000
+					TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+					TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+					TITLE.Font = Enum.Font.SourceSans
+					TITLE.Text = "Bring to you"
+					TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.TextScaled = true
+					TITLE.TextSize = 14.000
+					TITLE.TextWrapped = true
+
+					ScrollingFrame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					ScrollingFrame.Active = true
+					ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+					ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+					ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+					ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+					ScrollingFrame.ScrollBarThickness = 5
+
+					UIListLayout.Parent = ScrollingFrame
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+					for i,v in pairs(game.Players:GetChildren()) do
+						local Frame = Instance.new("Frame")
+						Frame.Parent = ScrollingFrame
+						Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+						Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+						Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+
+						local User = Instance.new("TextButton")
+						User.Name = "User"
+						User.Parent = Frame
+						User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						User.Size = UDim2.new(1, 0, 1, 0)
+						User.Font = Enum.Font.SourceSans
+						if game.Workspace.ropes:FindFirstChild(v.Name) then
+							User.Text = v.Name.."[JAIL]"
+						else
+							User.Text = v.Name
+						end
+						User.TextColor3 = Color3.fromRGB(0, 0, 0)
+						User.TextSize = 14.000
+						User.TextScaled = true
+						User.TextWrapped = true
+						spawn(function()
+							User.MouseButton1Click:Connect(function()
+								if game.Workspace:FindFirstChild(v.Name) then
+									if game.Workspace:FindFirstChild(plr.Name) then
+										game.Workspace:FindFirstChild(v.Name):MoveTo(game.Workspace:FindFirstChild(plr.Name).HumanoidRootPart.Position)
+									end
+								end
+							end)
+						end)
+					end
+				end)
+			end)
+
+			Re.MouseButton1Click:Connect(function()
+				spawn(function()
+					if conFrame then
+						conFrame.Visible = false
+					end
+					plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+					local TITLE = Instance.new("TextLabel")
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local UIListLayout = Instance.new("UIListLayout")
+
+					TITLE.Name = "TITLE"
+					TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.BackgroundTransparency = 1.000
+					TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+					TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+					TITLE.Font = Enum.Font.SourceSans
+					TITLE.Text = "Reset"
+					TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.TextScaled = true
+					TITLE.TextSize = 14.000
+					TITLE.TextWrapped = true
+
+					UIListLayout.Parent = ScrollingFrame
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+					local Frame = Instance.new("Frame")
+					Frame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 0.137524575, 0)
+					Frame.Size = UDim2.new(1, 0, 0.862475514, 0)
+					local RESET = Instance.new("TextButton")
+					RESET.Name = "User"
+					RESET.Parent = Frame
+					RESET.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					RESET.Size = UDim2.new(1, 0, 1, 0)
+					RESET.TextScaled = true
+					RESET.TextWrapped = true
+					RESET.Font = Enum.Font.SourceSans
+					RESET.Text = "RESET"
+					RESET.TextColor3 = Color3.fromRGB(0, 0, 0)
+					RESET.TextSize = 14.000
+					spawn(function()
+						RESET.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.Health = 0
+							end
+						end)
+					end)
+				end)
+			end)
+			if rank == 1 then
+				LI.MouseButton1Click:Connect(function()
+					spawn(function()
+						if conFrame then
+							conFrame.Visible = false
+						end
+						plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+						local RedUp = Instance.new("TextButton")
+						local RedDown = Instance.new("TextButton")
+						local GreenDown = Instance.new("TextButton")
+						local GreenUp = Instance.new("TextButton")
+						local BlueUp = Instance.new("TextButton")
+						local BlueDown = Instance.new("TextButton")
+						local RedLine = Instance.new("Frame")
+						local UIGradient = Instance.new("UIGradient")
+						local GreenLine = Instance.new("Frame")
+						local UIGradient_2 = Instance.new("UIGradient")
+						local BlueLine = Instance.new("Frame")
+						local UIGradient_3 = Instance.new("UIGradient")
+						local AlphaDown = Instance.new("TextButton")
+						local AlphaLine = Instance.new("Frame")
+						local UIGradient_4 = Instance.new("UIGradient")
+						local AlphaUp = Instance.new("TextButton")
+						local col = Instance.new("TextButton")
+						local Linea = Instance.new("Frame")
+						local Liner = Instance.new("Frame")
+						local Lineg = Instance.new("Frame")
+						local Lineb = Instance.new("Frame")
+
+						--[[RedUp.Name = "RedUp"]]
+						RedUp.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						RedUp.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+						RedUp.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						RedUp.Font = Enum.Font.SourceSans
+						RedUp.Text = "^"
+						RedUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+						RedUp.TextScaled = true
+						RedUp.TextSize = 14.000
+						RedUp.TextWrapped = true
+
+						--[[RedDown.Name = "RedDown"]]
+						RedDown.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						RedDown.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+						RedDown.Position = UDim2.new(0, 0, 0.797297299, 0)
+						RedDown.Rotation = 180.000
+						RedDown.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						RedDown.Font = Enum.Font.SourceSans
+						RedDown.Text = "^"
+						RedDown.TextColor3 = Color3.fromRGB(0, 0, 0)
+						RedDown.TextScaled = true
+						RedDown.TextSize = 14.000
+						RedDown.TextWrapped = true
+
+						--[[GreenDown.Name = "GreenDown"]]
+						GreenDown.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						GreenDown.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+						GreenDown.Position = UDim2.new(0.19808121, 0, 0.797297299, 0)
+						GreenDown.Rotation = 180.000
+						GreenDown.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						GreenDown.Font = Enum.Font.SourceSans
+						GreenDown.Text = "^"
+						GreenDown.TextColor3 = Color3.fromRGB(0, 0, 0)
+						GreenDown.TextScaled = true
+						GreenDown.TextSize = 14.000
+						GreenDown.TextWrapped = true
+
+						--[[GreenUp.Name = "GreenUp"]]
+						GreenUp.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						GreenUp.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+						GreenUp.Position = UDim2.new(0.19808121, 0, 0, 0)
+						GreenUp.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						GreenUp.Font = Enum.Font.SourceSans
+						GreenUp.Text = "^"
+						GreenUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+						GreenUp.TextScaled = true
+						GreenUp.TextSize = 14.000
+						GreenUp.TextWrapped = true
+
+						--[[BlueUp.Name = "BlueUp"]]
+						BlueUp.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						BlueUp.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+						BlueUp.Position = UDim2.new(0.396162421, 0, 0, 0)
+						BlueUp.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						BlueUp.Font = Enum.Font.SourceSans
+						BlueUp.Text = "^"
+						BlueUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+						BlueUp.TextScaled = true
+						BlueUp.TextSize = 14.000
+						BlueUp.TextWrapped = true
+
+						--[[BlueDown.Name = "BlueDown"]]
+						BlueDown.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						BlueDown.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+						BlueDown.Position = UDim2.new(0.396162421, 0, 0.797297299, 0)
+						BlueDown.Rotation = 180.000
+						BlueDown.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						BlueDown.Font = Enum.Font.SourceSans
+						BlueDown.Text = "^"
+						BlueDown.TextColor3 = Color3.fromRGB(0, 0, 0)
+						BlueDown.TextScaled = true
+						BlueDown.TextSize = 14.000
+						BlueDown.TextWrapped = true
+
+						--[[RedLine.Name = "RedLine"]]
+						RedLine.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						RedLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						RedLine.Position = UDim2.new(0, 0, 0.198198199, 0)
+						RedLine.Size = UDim2.new(0.19808121, 0, 0.600000083, 0)
+						RedLine.ZIndex = 5
+
+						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+						UIGradient.Rotation = 90
+						UIGradient.Parent = RedLine
+
+						--[[GreenLine.Name = "GreenLine"]]
+						GreenLine.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						GreenLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						GreenLine.Position = UDim2.new(0.19808121, 0, 0.198198199, 0)
+						GreenLine.Size = UDim2.new(0.19808121, 0, 0.600000083, 0)
+						GreenLine.ZIndex = 5
+
+						UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+						UIGradient_2.Rotation = 90
+						UIGradient_2.Parent = GreenLine
+
+						--[[BlueLine.Name = "BlueLine"]]
+						BlueLine.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						BlueLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						BlueLine.Position = UDim2.new(0.396162421, 0, 0.198198199, 0)
+						BlueLine.Size = UDim2.new(0.19808121, 0, 0.600000083, 0)
+						BlueLine.ZIndex = 5
+
+						UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+						UIGradient_3.Rotation = 90
+						UIGradient_3.Parent = BlueLine
+
+						--[[AlphaDown.Name = "AlphaDown"]]
+						AlphaDown.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						AlphaDown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						AlphaDown.Position = UDim2.new(0.594243646, 0, 0.797297299, 0)
+						AlphaDown.Rotation = 180.000
+						AlphaDown.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						AlphaDown.Font = Enum.Font.SourceSans
+						AlphaDown.Text = "^"
+						AlphaDown.TextColor3 = Color3.fromRGB(0, 0, 0)
+						AlphaDown.TextScaled = true
+						AlphaDown.TextSize = 14.000
+						AlphaDown.TextWrapped = true
+
+						--[[AlphaLine.Name = "AlphaLine"]]
+						AlphaLine.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						AlphaLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						AlphaLine.Position = UDim2.new(0.594243646, 0, 0.198198199, 0)
+						AlphaLine.Size = UDim2.new(0.19808121, 0, 0.600000083, 0)
+						AlphaLine.ZIndex = 5
+
+						UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+						UIGradient_4.Rotation = 0
+						UIGradient_4.Parent = AlphaLine
+
+						--[[AlphaUp.Name = "AlphaUp"]]
+						AlphaUp.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						AlphaUp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						AlphaUp.Position = UDim2.new(0.594243646, 0, 0, 0)
+						AlphaUp.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+						AlphaUp.Font = Enum.Font.SourceSans
+						AlphaUp.Text = "^"
+						AlphaUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+						AlphaUp.TextScaled = true
+						AlphaUp.TextSize = 14.000
+						AlphaUp.TextWrapped = true
+
+						--[[col.Name = "col"]]
+						col.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						col.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						col.Position = UDim2.new(0.797537506, 0, 0, 0)
+						col.Size = UDim2.new(0.200000003, 0, 1, 0)
+						col.Text = "Set Lights"
+						col.TextScaled = true
+
+						Linea.Parent = AlphaLine
+						Linea.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+						Linea.Size = UDim2.new(1, 0, 0.03, 0)
+						Linea.ZIndex = 6
+
+						Liner.Parent = RedLine
+						Liner.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+						Liner.Size = UDim2.new(1, 0, 0.03, 0)
+						Liner.ZIndex = 6
+
+						Lineg.Parent = GreenLine
+						Lineg.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+						Lineg.Size = UDim2.new(1, 0, 0.03, 0)
+						Lineg.ZIndex = 6
+
+						Lineb.Parent = BlueLine
+						Lineb.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+						Lineb.Size = UDim2.new(1, 0, 0.03, 0)
+						Lineb.ZIndex = 6
+
+						local cc = Color3.new(1,1,1)
+						local r = 255
+						local g = 255
+						local b = 255
+						local a = 0
+
+						local hru = false
+						local hgu = false
+						local hbu = false
+						local hau = false
+
+						local hrd = false
+						local hgd = false
+						local hbd = false
+						local had = false
+
+						spawn(function()
+							while true do
+								local va = (r-a)/255
+								local vb = (g-a)/255
+								local vc = (b-a)/255
+
+								if va < 0 then
+									va = 0
+								end
+								if vb < 0 then
+									vb = 0
+								end
+								if vc < 0 then
+									vc = 0
+								end
+								cc = Color3.new(va,vb,vc)
+
+								col.BackgroundColor3 = cc
+								Linea.Position = UDim2.new(0,0,1-a/255,0)
+								Liner.Position = UDim2.new(0,0,1-r/255,0)
+								Lineg.Position = UDim2.new(0,0,1-g/255,0)
+								Lineb.Position = UDim2.new(0,0,1-b/255,0)
+								wait()
+							end
+						end)
+						local int = 5
+						local tim = 0.1
+						RedUp.MouseButton1Click:Connect(function()
+							hru = false
+							if r+int < 255 then
+								r += int
+							end
+						end)
+						RedUp.MouseButton1Down:Connect(function()
+							hru = true
+							spawn(function()
+								repeat
+									if r+int < 256 then
+										r += int
+									else
+										hru = false
+									end
+									wait(tim)
+								until hru == false
+							end)
+						end)
+						RedUp.MouseButton1Up:Connect(function()
+							hru = false
+						end)
+
+
+						RedDown.MouseButton1Click:Connect(function()
+							hrd = false
+							if r-int >= 0 then
+								r -= int
+							end
+						end)
+						RedDown.MouseButton1Down:Connect(function()
+							hrd = true
+							spawn(function()
+								repeat
+									if r-int > 0 then
+										r -= int
+									else
+										hrd = false
+									end
+									wait(tim)
+								until hrd == false
+							end)
+						end)
+						RedDown.MouseButton1Up:Connect(function()
+							hrd = false
+						end)
+
+
+						GreenUp.MouseButton1Click:Connect(function()
+							hgu = false
+							if g+int < 255 then
+								g += int
+							end
+						end)
+						GreenUp.MouseButton1Down:Connect(function()
+							hgu = true
+							spawn(function()
+								repeat
+									if g+int < 256 then
+										g += int
+									else
+										hgu = false
+									end
+									wait(tim)
+								until hgu == false
+							end)
+						end)
+						GreenUp.MouseButton1Up:Connect(function()
+							hgu = false
+						end)
+
+
+						GreenDown.MouseButton1Click:Connect(function()
+							hgd = false
+							if g-int >= 0 then
+								g -= int
+							end
+						end)
+						GreenDown.MouseButton1Down:Connect(function()
+							hgd = true
+							spawn(function()
+								repeat
+									if g-int > 0 then
+										g -= int
+									else
+										hgd = false
+									end
+									wait(tim)
+								until hgd == false
+							end)
+						end)
+						GreenDown.MouseButton1Up:Connect(function()
+							hgd = false
+						end)
+
+
+						BlueUp.MouseButton1Click:Connect(function()
+							hbu = false
+							if b+int < 255 then
+								b += int
+							end
+						end)
+						BlueUp.MouseButton1Down:Connect(function()
+							hbu = true
+							spawn(function()
+								repeat
+									if b+int < 256 then
+										b += int
+									else
+										hbu = false
+									end
+									wait(tim)
+								until hbu == false
+							end)
+						end)
+						BlueUp.MouseButton1Up:Connect(function()
+							hbu = false
+						end)
+
+
+						BlueDown.MouseButton1Click:Connect(function()
+							hbd = false
+							if b-int >= 0 then
+								b -= int
+							end
+						end)
+						BlueDown.MouseButton1Down:Connect(function()
+							hbd = true
+							spawn(function()
+								repeat
+									if b-int > 0 then
+										b -= int
+									else
+										hbd = false
+									end
+									wait(tim)
+								until hbd == false
+							end)
+						end)
+						BlueDown.MouseButton1Up:Connect(function()
+							hbd = false
+						end)
+
+
+						AlphaUp.MouseButton1Click:Connect(function()
+							hau = false
+							if a+int < 255 then
+								a += int
+							end
+						end)
+						AlphaUp.MouseButton1Down:Connect(function()
+							hau = true
+							spawn(function()
+								repeat
+									if a+int < 256 then
+										a += int
+									else
+										hau = false
+									end
+									wait(tim)
+								until hau == false
+							end)
+						end)
+						AlphaUp.MouseButton1Up:Connect(function()
+							hau = false
+						end)
+
+
+						AlphaDown.MouseButton1Click:Connect(function()
+							had = false
+							if a-int >= 0 then
+								a -= int
+							end
+						end)
+						AlphaDown.MouseButton1Down:Connect(function()
+							had = true
+							spawn(function()
+								repeat
+									if a-int > 0 then
+										a -= int
+									else
+										had = false
+									end
+									wait(tim)
+								until had == false
+							end)
+						end)
+						AlphaDown.MouseButton1Up:Connect(function()
+							had = false
+						end)
+						col.MouseButton1Click:Connect(function()
+							game.ReplicatedStorage.light_server:Fire(cc)
+						end)
+					end)
+				end)
+
+				UN.MouseButton1Click:Connect(function()
+					spawn(function()
+						if conFrame then
+							conFrame.Visible = false
+						end
+						plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+						local TITLE = Instance.new("TextLabel")
+						local ScrollingFrame = Instance.new("ScrollingFrame")
+						local UIListLayout = Instance.new("UIListLayout")
+
+						TITLE.Name = "TITLE"
+						TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TITLE.BackgroundTransparency = 1.000
+						TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+						TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+						TITLE.Font = Enum.Font.SourceSans
+						TITLE.Text = "Uniform"
+						TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+						TITLE.TextScaled = true
+						TITLE.TextSize = 14.000
+						TITLE.TextWrapped = true
+
+						ScrollingFrame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						ScrollingFrame.Active = true
+						ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+						ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+						ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+						ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+						ScrollingFrame.ScrollBarThickness = 5
+
+						UIListLayout.Parent = ScrollingFrame
+						UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+						for i,v in pairs(game.Players:GetChildren()) do
+							local Frame = Instance.new("Frame")
+							Frame.Parent = ScrollingFrame
+							Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+							Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+							Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+
+							local User = Instance.new("TextButton")
+							User.Name = "User"
+							User.Parent = Frame
+							User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							User.Size = UDim2.new(1, 0, 1, 0)
+							User.Font = Enum.Font.SourceSans
+							if game.Workspace.ropes:FindFirstChild(v.Name) then
+								User.Text = v.Name.."[JAIL]"
+							else
+								User.Text = v.Name
+							end
+							User.TextColor3 = Color3.fromRGB(0, 0, 0)
+							User.TextSize = 14.000
+							User.TextScaled = true
+							User.TextWrapped
+								= true
+							spawn(function()
+								User.MouseButton1Click:Connect(function()
+									local TITLE = Instance.new("TextLabel")
+									local ScrollingFrame2 = Instance.new("ScrollingFrame")
+									local UIListLayout2 = Instance.new("UIListLayout")
+
+									ScrollingFrame2.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+									ScrollingFrame2.Active = true
+									ScrollingFrame2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+									ScrollingFrame2.Position = UDim2.new(0, 0, 0.137524575, 0)
+									ScrollingFrame2.Size = UDim2.new(1, 0, 0.862475514, 0)
+									ScrollingFrame2.CanvasSize = UDim2.new(0, 0, 5, 0)
+									ScrollingFrame2.ZIndex = 9
+									ScrollingFrame2.ScrollBarThickness = 5
+
+									UIListLayout2.Parent = ScrollingFrame2
+									UIListLayout2.SortOrder = Enum.SortOrder.LayoutOrder
+
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local bk = Instance.new("TextButton")
+									bk.Name = "exit"
+									bk.Parent = Frame
+									bk.BackgroundColor3 = Color3.new(1, 0, 0)
+									bk.Size = UDim2.new(1, 0, 1, 0)
+									bk.Font = Enum.Font.SourceSans
+									bk.Text = "Back"
+									bk.TextColor3 = Color3.new(0, 0, 0)
+									bk.TextSize = 14.000
+									bk.TextScaled = true
+									bk.TextWrapped = true
+									bk.ZIndex  = 11
+									spawn(function()
+										bk.MouseButton1Click:Connect(function()
+											ScrollingFrame2:Destroy()
+										end)
+									end)
+									local allows = {"xsup9","globfor"}
+									if table.find(allows,plr.N) then
+										local Frame = Instance.new("Frame")
+										Frame.Parent = ScrollingFrame2
+										Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+										Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+										Frame.ZIndex = 10
+										local O = Instance.new("TextButton")
+										O.Name = "User"
+										O.Parent = Frame
+										O.BackgroundColor3 = Color3.fromRGB(180, 29, 255)
+										O.Size = UDim2.new(1, 0, 1, 0)
+										O.Font = Enum.Font.SourceSans
+										O.Text = "Owner [Old]"
+										O.TextColor3 = Color3.fromRGB(0, 0, 0)
+										O.TextSize = 14.000
+										O.TextScaled = true
+										O.TextWrapped = true
+										O.ZIndex = 11
+										spawn(function()
+											O.MouseButton1Click:Connect(function()
+												if game.Workspace:FindFirstChild(v.Name) then
+													if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9598109634"
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9598109634"
+													end
+												end
+											end)
+										end)
+										local Frame = Instance.new("Frame")
+										Frame.Parent = ScrollingFrame2
+										Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+										Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+										Frame.ZIndex = 10
+										local A = Instance.new("TextButton")
+										A.Name = "User"
+										A.Parent = Frame
+										A.BackgroundColor3 = Color3.fromRGB(255, 102, 0)
+										A.Size = UDim2.new(1, 0, 1, 0)
+										A.Font = Enum.Font.SourceSans
+										A.Text = "Admin [Old]"
+										A.TextColor3 = Color3.fromRGB(0, 0, 0)
+										A.TextSize = 14.000
+										A.TextScaled = true
+										A.TextWrapped = true
+										A.ZIndex = 11
+										spawn(function()
+											A.MouseButton1Click:Connect(function()
+												if game.Workspace:FindFirstChild(v.Name) then
+													if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9598110338"
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9598110338"
+													end
+												end
+											end)
+										end)
+										local Frame = Instance.new("Frame")
+										Frame.Parent = ScrollingFrame2
+										Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+										Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+										Frame.ZIndex = 10
+										local YT = Instance.new("TextButton")
+										YT.Name = "User"
+										YT.Parent = Frame
+										YT.BackgroundColor3 = Color3.fromRGB(52, 227, 13)
+										YT.Size = UDim2.new(1, 0, 1, 0)
+										YT.Font = Enum.Font.SourceSans
+										YT.Text = "YouTuber [Old]"
+										YT.TextColor3 = Color3.fromRGB(0, 0, 0)
+										YT.TextSize = 14.000
+										YT.TextScaled = true
+										YT.TextWrapped = true
+										YT.ZIndex = 11
+										spawn(function()
+											YT.MouseButton1Click:Connect(function()
+												if game.Workspace:FindFirstChild(v.Name) then
+													if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9604999034"
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9604999034"
+													end
+												end
+											end)
+										end)
+										local Frame = Instance.new("Frame")
+										Frame.Parent = ScrollingFrame2
+										Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+										Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+										Frame.ZIndex = 10
+										local PLR = Instance.new("TextButton")
+										PLR.Name = "User"
+										PLR.Parent = Frame
+										PLR.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+										PLR.Size = UDim2.new(1, 0, 1, 0)
+										PLR.Font = Enum.Font.SourceSans
+										PLR.Text = "Player [Old]"
+										PLR.TextColor3 = Color3.fromRGB(0, 0, 0)
+										PLR.TextSize = 14.000
+										PLR.TextScaled = true
+										PLR.TextWrapped = true
+										PLR.ZIndex = 11
+										spawn(function()
+											PLR.MouseButton1Click:Connect(function()
+												if game.Workspace:FindFirstChild(v.Name) then
+													if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9602139411"
+														game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9602139411"
+													end
+												end
+											end)
+										end)
+										local Frame = Instance.new("Frame")
+										Frame.Parent = ScrollingFrame2
+										Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+										Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+										Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+										Frame.ZIndex = 10
+									end
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local O = Instance.new("TextButton")
+									O.Name = "User"
+									O.Parent = Frame
+									O.BackgroundColor3 = Color3.fromRGB(180, 29, 255)
+									O.Size = UDim2.new(1, 0, 1, 0)
+									O.Font = Enum.Font.SourceSans
+									O.Text = "Owner"
+									O.TextColor3 = Color3.fromRGB(0, 0, 0)
+									O.TextSize = 14.000
+									O.TextScaled = true
+									O.TextWrapped = true
+									O.ZIndex = 11
+									spawn(function()
+										O.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9719167230"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9719167230"
+												end
+											end
+										end)
+									end)
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local A = Instance.new("TextButton")
+									A.Name = "User"
+									A.Parent = Frame
+									A.BackgroundColor3 = Color3.fromRGB(255, 102, 0)
+									A.Size = UDim2.new(1, 0, 1, 0)
+									A.Font = Enum.Font.SourceSans
+									A.Text = "Admin"
+									A.TextColor3 = Color3.fromRGB(0, 0, 0)
+									A.TextSize = 14.000
+									A.TextScaled = true
+									A.TextWrapped = true
+									A.ZIndex = 11
+									spawn(function()
+										A.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9719166863"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9719166863"
+												end
+											end
+										end)
+									end)
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local YT = Instance.new("TextButton")
+									YT.Name = "User"
+									YT.Parent = Frame
+									YT.BackgroundColor3 = Color3.fromRGB(52, 227, 13)
+									YT.Size = UDim2.new(1, 0, 1, 0)
+									YT.Font = Enum.Font.SourceSans
+									YT.Text = "YouTuber"
+									YT.TextColor3 = Color3.fromRGB(0, 0, 0)
+									YT.TextSize = 14.000
+									YT.TextScaled = true
+									YT.TextWrapped = true
+									YT.ZIndex = 11
+									spawn(function()
+										YT.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9719169165"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9719169165"
+												end
+											end
+										end)
+									end)
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local PLR = Instance.new("TextButton")
+									PLR.Name = "User"
+									PLR.Parent = Frame
+									PLR.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+									PLR.Size = UDim2.new(1, 0, 1, 0)
+									PLR.Font = Enum.Font.SourceSans
+									PLR.Text = "Player"
+									PLR.TextColor3 = Color3.fromRGB(0, 0, 0)
+									PLR.TextSize = 14.000
+									PLR.TextScaled = true
+									PLR.TextWrapped = true
+									PLR.ZIndex = 11
+									spawn(function()
+										PLR.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9602139411"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9719166287"
+												end
+											end
+										end)
+									end)
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local JHS = Instance.new("TextButton")
+									JHS.Name = "User"
+									JHS.Parent = Frame
+									JHS.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+									JHS.Size = UDim2.new(1, 0, 1, 0)
+									JHS.Font = Enum.Font.SourceSans
+									JHS.Text = "Jail High Security"
+									JHS.TextColor3 = Color3.fromRGB(0, 0, 0)
+									JHS.TextSize = 14.000
+									JHS.TextScaled = true
+									JHS.TextWrapped = true
+									JHS.ZIndex = 11
+									spawn(function()
+										JHS.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9631600848"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9631600848"
+												end
+											end
+										end)
+									end)
+									local Frame = Instance.new("Frame")
+									Frame.Parent = ScrollingFrame2
+									Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+									Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+									Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+									Frame.ZIndex = 10
+									local JLS = Instance.new("TextButton")
+									JLS.Name = "User"
+									JLS.Parent = Frame
+									JLS.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+									JLS.Size = UDim2.new(1, 0, 1, 0)
+									JLS.Font = Enum.Font.SourceSans
+									JLS.Text = "Jail Low Security"
+									JLS.TextColor3 = Color3.fromRGB(0, 0, 0)
+									JLS.TextSize = 14.000
+									JLS.TextScaled = true
+									JLS.TextWrapped = true
+									JLS.ZIndex = 11
+									spawn(function()
+										JLS.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9631642141"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9631642141"
+												end
+											end
+										end)
+									end)
+									local ORG = Instance.new("TextButton")
+									ORG.Name = "User"
+									ORG.Parent = Frame
+									ORG.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+									ORG.Size = UDim2.new(1, 0, 1, 0)
+									ORG.Font = Enum.Font.SourceSans
+									ORG.Text = "Original"
+									ORG.TextColor3 = Color3.fromRGB(0, 0, 0)
+									ORG.TextSize = 14.000
+									ORG.TextScaled = true
+									ORG.TextWrapped = true
+									ORG.ZIndex = 11
+									spawn(function()
+										ORG.MouseButton1Click:Connect(function()
+											if game.Workspace:FindFirstChild(v.Name) then
+												if game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt") then
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Shirt").ShirtTemplate = "rbxassetid://9602139411"
+													game.Workspace:WaitForChild(v.Name):FindFirstChild("Pants").PantsTemplate = "rbxassetid://9602139411"
+												end
+											end
+										end)
+									end)
+								end)
+							end)
+						end
+					end)
+
+				end)
+			end
+			SP.MouseButton1Click:Connect(function()
+				spawn(function()
+					if conFrame then
+						conFrame.Visible = false
+					end
+					plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+					local TITLE = Instance.new("TextLabel")
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local UIListLayout = Instance.new("UIListLayout")
+
+					TITLE.Name = "TITLE"
+					TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.BackgroundTransparency = 1.000
+					TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+					TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+					TITLE.Font = Enum.Font.SourceSans
+					TITLE.Text = "Speed"
+					TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.TextScaled = true
+					TITLE.TextSize = 14.000
+					TITLE.TextWrapped = true
+
+					UIListLayout.Parent = ScrollingFrame
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+					local Frame = Instance.new("Frame")
+					Frame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 0.137524575, 0)
+					Frame.Size = UDim2.new(1, 0, 0.862475514, 0)
+					local UP10 = Instance.new("TextButton")
+					UP10.Name = "UP10"
+					UP10.Parent = Frame
+					UP10.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					UP10.Size = UDim2.new(0.5, 0, 0.25, 0)
+					UP10.TextScaled = true
+					UP10.TextWrapped = true
+					UP10.Font = Enum.Font.SourceSans
+					UP10.Text = "UP 10"
+					UP10.TextColor3 = Color3.fromRGB(0, 0, 0)
+					UP10.TextSize = 14.000
+					spawn(function()
+						UP10.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed += 10
+							end
+						end)
+					end)
+					local UP100 = Instance.new("TextButton")
+					UP100.Name = "UP100"
+					UP100.Parent = Frame
+					UP100.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					UP100.Size = UDim2.new(0.5, 0, 0.25, 0)
+					UP100.Position = UDim2.new(0.5,0,0,0)
+					UP100.TextScaled = true
+					UP100.TextWrapped = true
+					UP100.Font = Enum.Font.SourceSans
+					UP100.Text = "UP 100"
+					UP100.TextColor3 = Color3.fromRGB(0, 0, 0)
+					UP100.TextSize = 14.000
+					spawn(function()
+						UP100.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed += 100
+							end
+						end)
+					end)
+					local SPEEDTEXT = Instance.new("TextButton")
+					SPEEDTEXT.Name = "SPEED"
+					SPEEDTEXT.Parent = Frame
+					SPEEDTEXT.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					SPEEDTEXT.Size = UDim2.new(1, 0, 0.5, 0)
+					SPEEDTEXT.Position = UDim2.new(0,0,0.25,0)
+					SPEEDTEXT.TextScaled = true
+					SPEEDTEXT.TextWrapped = true
+					SPEEDTEXT.Font = Enum.Font.SourceSans
+					SPEEDTEXT.Text = "16"
+					SPEEDTEXT.TextColor3 = Color3.fromRGB(0, 0, 0)
+					SPEEDTEXT.TextSize = 14.000
+					spawn(function()
+						SPEEDTEXT.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								SPEEDTEXT.Text = game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed
+								if rank == 2 then
+									if game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed > 100 then
+										game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed = 100
+									end
+								end
+							end
+						end)
+						while true do
+							if game.Workspace:FindFirstChild(plr.Name) then
+								SPEEDTEXT.Text = game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed
+								if rank == 2 then
+									if game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed > 100 then
+										game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed = 100
+									end
+								end
+							end
+							wait(0.5)
+						end
+					end)
+					local DW10 = Instance.new("TextButton")
+					DW10.Name = "DOWN10"
+					DW10.Parent = Frame
+					DW10.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					DW10.Size = UDim2.new(0.5, 0, 0.25, 0)
+					DW10.Position = UDim2.new(0,0,0.75,0)
+					DW10.TextScaled = true
+					DW10.TextWrapped = true
+					DW10.Font = Enum.Font.SourceSans
+					DW10.Text = "DOWN 10"
+					DW10.TextColor3 = Color3.fromRGB(0, 0, 0)
+					DW10.TextSize = 14.000
+					spawn(function()
+						DW10.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed -= 10
+							end
+						end)
+					end)
+					local DW100 = Instance.new("TextButton")
+					DW100.Name = "DOWN100"
+					DW100.Parent = Frame
+					DW100.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					DW100.Size = UDim2.new(0.5, 0, 0.25, 0)
+					DW100.Position = UDim2.new(0.5,0,0.75,0)
+					DW100.TextScaled = true
+					DW100.TextWrapped = true
+					DW100.Font = Enum.Font.SourceSans
+					DW100.Text = "DOWN 100"
+					DW100.TextColor3 = Color3.fromRGB(0, 0, 0)
+					DW100.TextSize = 14.000
+					spawn(function()
+						DW100.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.WalkSpeed -= 100
+							end
+						end)
+					end)
+				end)
+			end)
+
+			JU.MouseButton1Click:Connect(function()
+				spawn(function()
+					if conFrame then
+						conFrame.Visible = false
+					end
+					plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+					local TITLE = Instance.new("TextLabel")
+					local ScrollingFrame = Instance.new("ScrollingFrame")
+					local UIListLayout = Instance.new("UIListLayout")
+
+					TITLE.Name = "TITLE"
+					TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.BackgroundTransparency = 1.000
+					TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+					TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+					TITLE.Font = Enum.Font.SourceSans
+					TITLE.Text = "Jump"
+					TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+					TITLE.TextScaled = true
+					TITLE.TextSize = 14.000
+					TITLE.TextWrapped = true
+
+					UIListLayout.Parent = ScrollingFrame
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+					local Frame = Instance.new("Frame")
+					Frame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+					Frame.Position = UDim2.new(0, 0, 0.137524575, 0)
+					Frame.Size = UDim2.new(1, 0, 0.862475514, 0)
+					local UP10 = Instance.new("TextButton")
+					UP10.Name = "UP10"
+					UP10.Parent = Frame
+					UP10.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					UP10.Size = UDim2.new(0.5, 0, 0.25, 0)
+					UP10.TextScaled = true
+					UP10.TextWrapped = true
+					UP10.Font = Enum.Font.SourceSans
+					UP10.Text = "UP 10"
+					UP10.TextColor3 = Color3.fromRGB(0, 0, 0)
+					UP10.TextSize = 14.000
+					spawn(function()
+						UP10.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.JumpPower += 10
+							end
+						end)
+					end)
+					local UP100 = Instance.new("TextButton")
+					UP100.Name = "UP100"
+					UP100.Parent = Frame
+					UP100.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					UP100.Size = UDim2.new(0.5, 0, 0.25, 0)
+					UP100.Position = UDim2.new(0.5,0,0,0)
+					UP100.TextScaled = true
+					UP100.TextWrapped = true
+					UP100.Font = Enum.Font.SourceSans
+					UP100.Text = "UP 100"
+					UP100.TextColor3 = Color3.fromRGB(0, 0, 0)
+					UP100.TextSize = 14.000
+					spawn(function()
+						UP100.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.JumpPower += 100
+							end
+						end)
+					end)
+					local JUMP = Instance.new("TextButton")
+					JUMP.Name = "JUMP"
+					JUMP.Parent = Frame
+					JUMP.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					JUMP.Size = UDim2.new(1, 0, 0.5, 0)
+					JUMP.Position = UDim2.new(0,0,0.25,0)
+					JUMP.TextScaled = true
+					JUMP.TextWrapped = true
+					JUMP.Font = Enum.Font.SourceSans
+					JUMP.Text = "16"
+					JUMP.TextColor3 = Color3.fromRGB(0, 0, 0)
+					JUMP.TextSize = 14.000
+					spawn(function()
+						JUMP.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								JUMP.Text = game.Workspace:FindFirstChild(plr.Name).Humanoid.JumpPower
+							end
+						end)
+						while true do
+							if game.Workspace:FindFirstChild(plr.Name) then
+								JUMP.Text = game.Workspace:FindFirstChild(plr.Name).Humanoid.JumpPower
+							end
+							wait(0.5)
+						end
+					end)
+					local DW10 = Instance.new("TextButton")
+					DW10.Name = "DOWN10"
+					DW10.Parent = Frame
+					DW10.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					DW10.Size = UDim2.new(0.5, 0, 0.25, 0)
+					DW10.Position = UDim2.new(0,0,0.75,0)
+					DW10.TextScaled = true
+					DW10.TextWrapped = true
+					DW10.Font = Enum.Font.SourceSans
+					DW10.Text = "DOWN 10"
+					DW10.TextColor3 = Color3.fromRGB(0, 0, 0)
+					DW10.TextSize = 14.000
+					spawn(function()
+						DW10.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.JumpPower -= 10
+							end
+						end)
+					end)
+					local DW100 = Instance.new("TextButton")
+					DW100.Name = "DOWN100"
+					DW100.Parent = Frame
+					DW100.BackgroundColor3 = Color3.fromRGB(255, 79, 79)
+					DW100.Size = UDim2.new(0.5, 0, 0.25, 0)
+					DW100.Position = UDim2.new(0.5,0,0.75,0)
+					DW100.TextScaled = true
+					DW100.TextWrapped = true
+					DW100.Font = Enum.Font.SourceSans
+					DW100.Text = "DOWN 100"
+					DW100.TextColor3 = Color3.fromRGB(0, 0, 0)
+					DW100.TextSize = 14.000
+					spawn(function()
+						DW100.MouseButton1Click:Connect(function()
+							if game.Workspace:FindFirstChild(plr.Name) then
+								game.Workspace:FindFirstChild(plr.Name).Humanoid.JumpPower -= 100
+							end
+						end)
+					end)
+				end)
+			end)
+			if rank == 1 then
+				BA.MouseButton1Click:Connect(function()
+					spawn(function()
+						if conFrame then
+							conFrame.Visible = false
+						end
+						plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info:ClearAllChildren()
+						local TITLE = Instance.new("TextLabel")
+						local ScrollingFrame = Instance.new("ScrollingFrame")
+						local UIListLayout = Instance.new("UIListLayout")
+
+						TITLE.Name = "TITLE"
+						TITLE.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TITLE.BackgroundTransparency = 1.000
+						TITLE.Position = UDim2.new(0, 0, 2.99779721e-08, 0)
+						TITLE.Size = UDim2.new(1, 0, 0.141060844, 0)
+						TITLE.Font = Enum.Font.SourceSans
+						TITLE.Text = "BAND toggle"
+						TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+						TITLE.TextScaled = true
+						TITLE.TextSize = 14.000
+						TITLE.TextWrapped = true
+
+						ScrollingFrame.Parent = plr.PlayerGui.REACTOR_ADMINNNNN.Main.Container.Info
+						ScrollingFrame.Active = true
+						ScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+						ScrollingFrame.Position = UDim2.new(0, 0, 0.137524575, 0)
+						ScrollingFrame.Size = UDim2.new(1, 0, 0.862475514, 0)
+						ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+						ScrollingFrame.ScrollBarThickness = 5
+
+						UIListLayout.Parent = ScrollingFrame
+						UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+						local bb = false
+						for i,v in pairs(game.Players:GetChildren()) do
+							local Frame = Instance.new("Frame")
+							Frame.Parent = ScrollingFrame
+							Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+							Frame.Position = UDim2.new(0, 0, 6.9516112e-08, 0)
+							Frame.Size = UDim2.new(1, 0, 0.0299999993, 0)
+
+							local User = Instance.new("TextButton")
+							User.Name = "User"
+							User.Parent = Frame
+							User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							User.Size = UDim2.new(1, 0, 1, 0)
+							User.Font = Enum.Font.SourceSans
+							if game.Workspace.ropes:FindFirstChild(v.Name) then
+								if game.Workspace.ropes:FindFirstChild(v.Name).Attachment1 ~= nil then
+									User.Text = v.Name.." : BAND"
+								else
+									User.Text = v.Name.." : UN-BAND"	
+								end
+							else
+								Frame.Visible = false
+							end
+							User.TextColor3 = Color3.fromRGB(0, 0, 0)
+							User.TextSize = 14.000
+							User.TextScaled = true
+							User.TextWrapped = true
+							spawn(function()
+								User.MouseButton1Click:Connect(function()
+									if game.Workspace.ropes:FindFirstChild(v.Name) then
+										if game.Workspace.ropes:FindFirstChild(v.Name).Attachment1 ~= nil then
+											game.Workspace.ropes:FindFirstChild(v.Name).Attachment1 = nil
+											game.Workspace:WaitForChild(v.Name):WaitForChild("Humanoid").WalkSpeed = 12
+											User.Text = v.Name.." : UN-BAND"
+										else
+											game.Workspace.ropes:FindFirstChild(v.Name).Attachment1 = game.Workspace.post.Attachment
+											game.Workspace:WaitForChild(v.Name):WaitForChild("Humanoid").WalkSpeed = 2
+											User.Text = v.Name.." : BAND"
+										end
+									else
+										Frame.Visible = false
+									end
+								end)
+							end)
+						end
+					end)
+				end)
+			end
+		end)
+	end
+	local sb = false
+	local al = {"globfor","xsup9","globthemaster"}
+	local ml = {}
+	local bt = {"Load"}
+	spawn(function()
+		while true do
+			if sb == true then
+				break
+			end
+			for i,v in pairs(game.Players:GetChildren()) do
+				if table.find(al,v.Name) then
+					if v:FindFirstChild("PlayerGui") then
+						if v:WaitForChild("PlayerGui"):FindFirstChild("REACTOR_ADMINNNNN") then
+						else
+							ad(v,"1")
+						end
+					end
+				else
+					if table.find(ml,v.Name) then
+						if v:FindFirstChild("PlayerGui") then
+							if v:WaitForChild("PlayerGui"):FindFirstChild("REACTOR_ADMINNNNN") then
+							else
+								ad(v,"2")
+							end
+						end
+					else
+						if v:WaitForChild("PlayerGui"):FindFirstChild("REACTOR_ADMINNNNN") then
+							v:WaitForChild("PlayerGui"):WaitForChild("REACTOR_ADMINNNNN"):Destroy()
+						end
+					end
+				end
+			end
+			wait()
+		end
+	end)
+	local e = 0
+	spawn(function()
+		while true do
+			for i,v in pairs(game.Players:GetChildren()) do
+				if table.find(bt,v.Name) then
+					v:Kick("You're banned, sorry.")
+				end
+			end
+			wait()
+		end
+	end)
+	spawn(function()
+		warn("Anti-Cheat V11.5 - People cant see this")
+		while wait() do
+			spawn(function()
+				local c1 = 0
+				local c2 = 0
+				while true do
+
+					for i,v in pairs(game.Players:GetChildren()) do
+						local watch = game.Workspace:FindFirstChild(v.Name)
+						if watch then
+							if watch:FindFirstChild("Humanoid") then
+							else
+								if c1 >= 20 then
+									if v then
+										v:Kick("\n Anti-Exploit: \n Detected god mode. \n Keeps happening? message sparkles3421 on the discord and i'll help!")
+										break
+									end
+								else
+									c1 += 1
+								end
+							end
+							if watch:FindFirstChild("HumanoidRootPart") then
+							else
+								if c2 >= 20 then
+									if v then
+										v:Kick("\n Anti-Exploit: \n Detected Player break. \n Keeps happening? message sparkles3421 on the discord and i'll help!")
+										break
+									end
+								else
+									c2 += 1
+								end
+							end
+							local aotp = 0
+							for i,v in pairs(watch:GetChildren()) do
+								if v:IsA("BasePart") then
+									if v.Transparency > 0.9 then
+										aotp += 1
+									end
+								end
+								wait()
+							end
+							if aotp > 4 then
+								v:Kick("\n Anti-Exploit: \n Detected Invisible. \n Keeps happening? message sparkles3421 on the discord and i'll help!")
+							end
+							wait()
+						end
+						wait(0.1)
+					end
+					wait()
+				end
+			end)
+		end
+	end)
+	spawn(function()
+		while true do
+			local stat,ress = pcall(function()
+				local im = game.HttpService
+				local req = im:GetAsync("https://sparkles3421.github.io/API/Data.json")
+				local lu = im:JSONDecode(req)
+				http = lu
+			end)
+			if not stat then
+				warn("DATA SAVE ERROR - admin")
+				warn(ress)
+			end
+			wait(5)
+		end
+	end)
+	spawn(function()
+		while true do
+			local tab = http
+			local set = {}
+			for i,v in pairs(tab.COREbanned[1]) do
+				set[#set+1] = tab.COREbanned[1][tostring(i)]
+			end
+			bt = set
+			local set2 = {}
+			local set3 = {}
+			for i,v in pairs(tab.COREadmin[1]) do
+				set2[#set2+1] = tab.COREadmin[1][tostring(i)]
+			end
+			for i,v in pairs(tab.COREmod[1]) do
+				set3[#set3+1] = tab.COREmod[1][tostring(i)]
+			end
+			al = set2
+			ml = set3
+			wait()
+		end
+	end)
+else
+	while wait() do
+		warn("NO ADMIN: HTTPS NOT ENABLED!")
+	end
+end
+spawn(function()
+	local MarketplaceService = game:GetService("MarketplaceService")
+	local Players = game:GetService("Players")
+
+	local productFunctions = {}
+
+	local lastPurchases = {}
+
+	local function ap(plr,amt)
+		local ha = false
+		for i,v in pairs(lastPurchases) do
+			if v[1] == plr then
+				v[2] += amt
+				ha = true
+			end
+		end
+		if not ha then
+			lastPurchases[#lastPurchases+1] = {plr,amt}
+		end
+	end
+
+	spawn(function()
+		while true do
+			local DSS = game:GetService("DataStoreService")
+			local DSL = DSS:GetDataStore("DonationLeaderboardData")
+			local DGD = DSL:GetAsync("Data")
+			if DGD ~= nil then
+				for i,x in pairs(DGD) do
+					for it,v in pairs(lastPurchases) do
+						if x[1] == v[1] then
+							x[2] += v[2]
+							table.remove(lastPurchases,it)
+						end
+						wait()
+					end
+				end
+				for i,v in pairs(lastPurchases) do
+					DGD[#DGD+1] = v
+				end
+				DSL:SetAsync("Data",DGD)
+			end
+			wait(30)
+		end
+	end)
+--[[
+	productFunctions[47261937] = function(receipt, player)
+		ap(player.UserId,1)
+	end
+
+	productFunctions[44546590] = function(receipt, player)
+		ap(player.UserId,10)
+	end
+
+	productFunctions[47263946] = function(receipt, player)
+		ap(player.UserId,100)
+	end
+	local function processReceipt(receiptInfo)
+		local success, isPurchaseRecorded = pcall(function()
+			local player = Players:GetPlayerByUserId(receiptInfo.PlayerId)
+			if not player then
+				return nil
+			end
+
+			local handler = productFunctions[receiptInfo.ProductId]
+
+			local success, result = pcall(handler, receiptInfo, player)
+			if not success or not result then
+				error("Failed to process a product purchase for ProductId:", receiptInfo.ProductId, " Player:", player)
+				return nil
+			end
+			return true
+		end)
+
+		if not success then
+			error("Failed to process receipt due to data store error.")
+			return Enum.ProductPurchaseDecision.NotProcessedYet
+--elseif isPurchaseRecorded == nil then
+--return Enum.ProductPurchaseDecision.NotProcessedYet
+		else
+			return Enum.ProductPurchaseDecision.PurchaseGranted
+		end
+	end
+MarketplaceService.ProcessReceipt = processReceipt
+]]
+end)
+
+spawn(function()
+	while true do
+		if math.random(1,100) <= 20  then
+			for i,v in pairs(game.Players:GetChildren()) do
+				spawn(function()
+					for c=1,math.random(3,7),1 do
+						local lpp = (game.Workspace:FindFirstChild(v.Name).HumanoidRootPart.Position)+Vector3.new((math.random(1,3)-1)/2,(math.random(1,3)-1)/2,(math.random(1,3)-1)/2)
+						wait(1)
+						game.Workspace:FindFirstChild(v.Name):SetPrimaryPartCFrame(CFrame.new(lpp))
+					end
+				end)
+			end
+		end
+		wait(20)
+	end
+end)
+spawn(function()
+	while true do
+		if math.random(1,100) <= 12  then
+			spawn(function()
+				local kill = Instance.new("Folder")
+				kill.Parent = game.Workspace
+				local w = 0
+				for c=0,6000 do
+					local killer = Instance.new("Part")
+					killer.BrickColor = BrickColor.random()
+					killer.Anchored = true
+					killer.Parent = kill
+					if w >= 100 then
+						wait()
+						w = 0
+					else
+						w += 1
+					end
+				end
+				wait(2)
+				kill:Destroy()
+			end)
+		end
+		wait(20)
+	end
+end)
+spawn(function()
+	if game.Workspace:FindFirstChild("Design") then
+		if game.Workspace.Design:FindFirstChild("RobuxLeaderboard") then
+			if game.Workspace.Design.RobuxLeaderboard:FindFirstChild("SurfaceGui") then
+				if game.Workspace.Design.RobuxLeaderboard.SurfaceGui:FindFirstChild("Frame") then
+					if game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame:FindFirstChild("Base") then
+						local baseTag = game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame.Base:Clone()
+						game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame.Base:Destroy()
+						baseTag.Size = UDim2.new(1,0,0.05,0)
+						local li = Instance.new("UIListLayout")
+						li.Parent = game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame
+						while true do
+							spawn(function()
+								for i,v in pairs(game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame:GetChildren()) do
+									if v:IsA("Frame") then
+										v:Destroy()
+									end
+								end
+								local cln = 1
+								local DSS = game:GetService("DataStoreService")
+								local DSL = DSS:GetDataStore("DonationLeaderboardData")
+								local DGD = DSL:GetAsync("Data")
+								local PLR = game:GetService("Players")
+								if DGD then
+									if #DGD > 0 then
+										for i,v in pairs(DGD) do
+											if #v == 2 then
+												if v[2] > 0 then
+													if v[1] ~= 0 then
+														local pua = PLR:GetNameFromUserIdAsync(v[1])
+														if pua ~= nil then
+															local frame = baseTag:Clone()
+															if frame:FindFirstChild("name") then
+																if frame:FindFirstChild("amount") then
+																	frame.name.Text = cln..". "..pua
+																	frame.amount.Text = v[2]																	
+																	cln += 1
+																	frame.Parent = game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame
+																end
+															end
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end)
+							wait(5)
+						end
+					else
+						warn("game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame.Base isn't a thing - Won't start donation leaderboard")
+					end
+				else
+					warn("game.Workspace.Design.RobuxLeaderboard.SurfaceGui.Frame isn't a thing - Won't start donation leaderboard")
+				end
+			else
+				warn("game.Workspace.Design.RobuxLeaderboard.SurfaceGui isn't a thing - Won't start donation leaderboard")
+			end
+		else
+			warn("game.Workspace.Design.RobuxLeaderboard isn't a thing - Won't start donation leaderboard")
+		end
+	else
+		warn("game.Workspace.Design isn't a thing - Won't start donation leaderboard")
+	end
+end)
+return "Admin loaded"
