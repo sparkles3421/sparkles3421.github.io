@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellarica MC</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/GetData.js"></script>
+    <script src="assets/Handler.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TG82M6LVJP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TG82M6LVJP');
+</script>
+  </head>
+  <body onload="LO()" onscroll="SRC()">
+    <div id="topbar" style="overflow: hidden; position:absolute; top:0%;height:10vh;width: 99vw;z-index: 99;background-color: black;background-image: linear-gradient(231deg,#161616,black);">
+      <img alt="Stellarica Logo" title="Logo" src="https://cdn.discordapp.com/icons/1038493335679156425/51fbeb5226ad96f9ccf242f09439d809.webp?size=128" class="icon"></img>
+      <h1 class="topt">
+        Stellarica
+        <button class="topb" onclick="GitH()">GitHub</button>
+        <button class="topb" onclick="Wiki()">Wiki</button>
+        <button class="topb" onclick="Mav()">Maven</button>
+      </h1>
+    </div>
+    <div class="page1" id="Item_Locator_Page_1_Click_To">
+      <h1 class="p1title">Stellarica</h1>
+      <iframe class="discord" src="https://discordapp.com/widget?id=1038493335679156425&theme=dark" width="500" height="500" allowtransparency="true" frameborder="0"></iframe> 
+    </div>
+    <div class="page2" id="Item_Locator_Page_2_Click_To">
+      <h1 class="p2title">Server Data</h1>
+      <h1 class="err" id="statuses">Waiting for javascript.</h1>
+      <noscript>Error loading scripts</noscript>
+      <div class="outer">
+        <div class="inner">
+          <h3 id="IP" class="innertext">Loading {Basic IP}</h3>
+          <button id="IC" class="copy" onclick="cIP()"></button>
+        </div>
+      </div>
+      <div class="outer2">
+        <div class="inner">
+          <h3 id="WEB" class="innertext">Loading {Latest Website}</h3>
+          <button id="CW" class="copy" onclick="cWEB()"></button>
+        </div>
+      </div>
+      <div class="outer3">
+        <div class="inner">
+          <h3 id="Status" class="innertext">Loading {Server Status}</h3>
+        </div>
+      </div>
+      <div class="outer4">
+        <div class="inner">
+          <h3 id="Players" class="innertext">Loading {Player Count}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="page3" id="Item_Locator_Page_3_Click_To">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1 class="warp">Radio Transmision Begin</h1><br>
+        <h1 class="p3title">What is Stellarica?</h1>
+        <p>
+            Stellarica is a open world space exploration game where you can go around the world exploring. There are many planets that you can go around inside of a starship that you can control.
+            This starship will be the guide to all of your explorations!<br>
+            <h2>What is a starship?</h2><br>
+            You need a starship to start flying around! Without a starship/rocket you wont get anywhere. You can create your own starship/rocket and design it to your likings.<br>
+            <br>
+            <h2>What are the intentions of the game?</h2><br>
+            Stellarica's intentions are to be as science-fiction themed as possible.
+            This means that most stuff inside the game will most likely be a thing in real life!<br>
+            Stellarica wants to be a exploration game inside of minecraft allowing players to travel between distant planets,build their own starships and much more to come!<br>
+            <br>
+            <h2>How can I learn more?</h2>
+            You can learn more information about the stellarica minecraft server by the wiki or by the discord server linked below<br>
+            <a href="https://wiki.stellarica.net">Wiki</a>-----------------------------------------------------------------------------------------<a href="https://discord.gg/fu2tRkhM">Discord</a>
+        </p><br>
+        <h1 class="warp">Transmision End---</h1>
+    </div>
+    <a href="#Item_Locator_Page_1_Click_To">Welcome</a>
+    <a href="#Item_Locator_Page_3_Click_To">About</a>
+    <a href="#Item_Locator_Page_2_Click_To">Server Data</a>
+  </body>
+</html>
