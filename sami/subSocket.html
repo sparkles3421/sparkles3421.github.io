@@ -1,6 +1,30 @@
 <html>
   <head>
     
+    <script>
+      var cheerio = require('cheerio');
+var request = require('request');
+
+// Replace "user_account" with the account name.
+var url = "https://www.youtube.com/user/user_account";
+
+request({
+    method: 'GET',
+    url: url
+}, function (err, response, html) {
+    if (err) {
+        console.log(err);
+
+        return;
+    }
+
+    let $ = cheerio.load(html);
+
+    var subscribers = $('#subscriber-count').text();
+
+    // use subscribers...
+});
+    </script>
   </head>
   <body>
     <iframe src='https://socialblade.com/youtube/channel/UCiE18H2tyU_sjnYncl4mdTg/realtime'></iframe>
