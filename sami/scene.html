@@ -12,8 +12,7 @@ var numh = 0;
 function higher(str, type, callCookie, callTex) {
 if (type) {numh = 1}else{numh=numh+1}document.getElementById('text').innerHTML=callTex.substring((callTex.length/2)-numh,(callTex.length/2)+(numh))
 if (numh < callTex.length){setTimeout(function () {higher(str, false, callCookie, callTex)},100)}else{setCall(callCookie,callTex)}}
-function lower(str,type,callCookie,callTex){if(type){num=str.length}else{num=num-1}document.getElementById('text').innerHTML=document.getElementById('text').innerHTML.substring(1, document.getElementById('text').innerHTML.length - 1)
-if (num > 0) {setTimeout(function(){lower(str, false, callCookie, callTex)},100)}else{higher(str,true,callCookie,callTex)}}
+function lower(str,type,callCookie,callTex){if(type){num=str.length}else{num=num-1}document.getElementById('text').innerHTML=document.getElementById('text').innerHTML.substring(1,document.getElementById('text').innerHTML.length-1);if (num > 0) {setTimeout(function(){lower(str, false, callCookie, callTex)},100)}else{higher(str,true,callCookie,callTex)}}
 function set(cookie, tex) {lower(document.getElementById('text').innerHTML, true, cookie, tex)}
 var isF = true;
 function run(){if(isF){isF=false;const last=this.localStorage.getItem('last');if(last==null){this.localStorage.setItem('last', 1)}else{if(last==1){set(2,'Remmber and sub to chat!')}else if(last==2) {set(3,'Like the stream to help it grow!')}else if(last==3){set(4,'Be respectful!')}else if(last==4){set(5,'Only comment your user every minutes')}else if(last==5){set(6,'Share this stream!')}else if(last==6){set(1,'Do not spam in the chat!')}}setTimeout(function () {isF = truerun()},5000)}}
