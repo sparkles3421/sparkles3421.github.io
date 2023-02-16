@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Changing text</title>
+<!-- auto update -->
 <script>
-function setCall(cookie, tex){document.getElementById('text').innerHTML=tex;this.localStorage.setItem('last',cookie)}var num=0;var numh=0;function higher(str,type,callCookie,callTex){if(type){numh=1}else{numh=numh+1}document.getElementById('text').innerHTML=callTex.substring((callTex.length/2)-numh,(callTex.length/2)+(numh))if(numh<callTex.length){setTimeout(function(){higher(str,false,callCookie,callTex)},100)}else{setCall(callCookie,callTex)}}function lower(str,type,callCookie,callTex){if(type){num=str.length}else{num=num-1}document.getElementById('text').innerHTML=document.getElementById('text').innerHTML.substring(1,document.getElementById('text').innerHTML.length-1);if(num>0){setTimeout(function(){lower(str,false,callCookie,callTex)},100)}else{higher(str,true,callCookie,callTex)}}function set(cookie,tex){lower(document.getElementById('text').innerHTML,true,cookie,tex)}var isF=true;function run(){if(isF){isF=false;const last=this.localStorage.getItem('last');if(last==null){this.localStorage.setItem('last',1)}else{if(last==1){set(2,'Remmber and sub to chat!')}else if(last==2) {set(3,'Like the stream to help it grow!')}else if(last==3){set(4,'Be respectful!')}else if(last==4){set(5,'Only comment your user every minutes')}else if(last==5){set(6,'Share this stream!')}else if(last==6){set(1,'Do not spam in the chat!')}}setTimeout(function(){isF=true;run()},5000)}}function startCookie(){run()}
+setTimeout(function () {
+// location.reload();
+}, 1000)
+function setCall(cookie, tex) {
+document.getElementById('text').innerHTML = tex
+this.localStorage.setItem('last', cookie)
+}
+var num = 0
+var numh = 0
+function higher(str, type, callCookie, callTex) {
+if (type) {
+numh = 1
+} else {
+numh = numh + 1
+}
+document.getElementById('text').innerHTML = callTex.substring((callTex.length / 2) - numh, (callTex.length / 2) + (numh))
+if (numh < callTex.length) {
+setTimeout(function () {
+higher(str, false, callCookie, callTex)
+}, 100)
+} else {
+setCall(callCookie, callTex)
+}
+}
+function lower(str, type, callCookie, callTex) {
+if (type) {
+num = str.length
+} else {
+num = num - 1
+}
+document.getElementById('text').innerHTML = document.getElementById('text').innerHTML.substring(1, document.getElementById('text').innerHTML.length - 1)
+if (num > 0) {
+setTimeout(function () {
+lower(str, false, callCookie, callTex)
+}, 100)
+} else {
+higher(str, true, callCookie, callTex)
+}
+}
+function set(cookie, tex) {
+lower(document.getElementById('text').innerHTML, true, cookie, tex)
+}
+var isF = true
+function run() {
+if (isF) {
+isF = false
+const last = this.localStorage.getItem('last')
+if (last == null) {
+this.localStorage.setItem('last', 1)
+} else {
+if (last == 1) {
+set(2, 'Remmber and sub to chat!')
+} else if (last == 2) {
+set(3, 'Like the stream to help it grow!')
+} else if (last == 3) {
+set(4, 'Be respectful!')
+} else if (last == 4) {
+set(5, 'Only comment your user every minutes')
+} else if (last == 5) {
+set(6, 'Share this stream!')
+} else if (last == 6) {
+set(1, 'Do not spam in the chat!')
+}
+}
+setTimeout(function () {
+isF = true
+run()
+}, 5000)
+}
+}
+function startCookie() {
+run()
+}
 </script>
 <style>
 body {
@@ -45,10 +119,12 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 </style>
 </head>
+
 <body onload="startCookie()">
 <div class="patch"></div>
 <img id="bg" src="Screenshot 2023-02-16 220332.png"></img>
 <h1 id='text'>e</h1>
 <h1 class="username">samidemir09 Gaming</h1>
 </body>
+
 </html>
