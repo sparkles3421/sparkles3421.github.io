@@ -1,127 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Changing text</title>
-<script>
-function setCall(cookie, tex) {
-document.getElementById('text').innerHTML = tex
-this.localStorage.setItem('last', cookie)
-}
-var num = 0
-var numh = 0
-function higher(str, type, callCookie, callTex) {
-if (type) {
-numh = 1
-} else {
-numh = numh + 1
-}
-document.getElementById('text').innerHTML = callTex.substring((callTex.length / 2) - numh, (callTex.length / 2) + (numh))
-if (numh < callTex.length) {
-setTimeout(function () {
-higher(str, false, callCookie, callTex)
-}, 100)
-} else {
-setCall(callCookie, callTex)
-}
-}
-function lower(str, type, callCookie, callTex) {
-if (type) {
-num = str.length
-} else {
-num = num - 1
-}
-document.getElementById('text').innerHTML = document.getElementById('text').innerHTML.substring(1, document.getElementById('text').innerHTML.length - 1)
-if (num > 0) {
-setTimeout(function () {
-lower(str, false, callCookie, callTex)
-}, 100)
-} else {
-higher(str, true, callCookie, callTex)
-}
-}
-function set(cookie, tex) {
-lower(document.getElementById('text').innerHTML, true, cookie, tex)
-}
-var isF = true
-function run() {
-if (isF) {
-isF = false
-const last = this.localStorage.getItem('last')
-if (last == null) {
-this.localStorage.setItem('last', 1)
-} else {
-if (last == 1) {
-set(2, 'Remmber and sub to chat!')
-} else if (last == 2) {
-set(3, 'Like the stream to help it grow!')
-} else if (last == 3) {
-set(4, 'Be respectful!')
-} else if (last == 4) {
-set(5, 'Only comment your user every five minutes')
-} else if (last == 5) {
-set(6, 'Share this stream!')
-} else if (last == 6) {
-set(1, 'Do not spam in the chat!')
-}
-}
-setTimeout(function () {
-isF = true
-run()
-}, 5000)
-}
-}
-function startCookie() {
-run()
-}
-</script>
-<style>
-body {
-margin: 0px;
-background-color: black;
-}
-#bg {
-width: 100vw;
-height: 100vh;
-position: absolute;
-}
-#text {
-color: aqua;
-position: absolute;
-top: 50vh;
-text-align: center;
-width: 62vw;
-font-size: 4vw;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.patch {
-width: 20vw;
-height: 1vh;
-position: absolute;
-background-color: #2475a8;
-z-index: 2;
-left: 42vw;
-}
-.username {
-color: rgb(59, 174, 174);
-position: absolute;
-top:81vh;
-left:10vw;
-font-size: 4vw;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-</style>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing text</title>
+    <script>
+        var time = 60000
+        function removeTime() {
+
+            time--;
+            if (time < 0) {
+                location.reload();
+            }
+            setTimeout(function () { removeTime() }, 100)
+        }
+        removeTime();
+    </script>
+    <script>
+        const upEvery = 7000;
+        var currtimer = upEvery;
+        function setCall(cookie, tex) {
+            document.getElementById('text').innerHTML = tex
+            this.localStorage.setItem('last', cookie)
+        }
+        var num = 0
+        var numh = 0
+        function higher(str, type, callCookie, callTex) {
+            if (type) {
+                numh = 1
+            } else {
+                numh = numh + 1
+            }
+            document.getElementById('text').innerHTML = callTex.substring((callTex.length / 2) - numh, (callTex.length / 2) + (numh))
+            if (numh < callTex.length) {
+                setTimeout(function () {
+                    higher(str, false, callCookie, callTex)
+                }, 100)
+            } else {
+                setCall(callCookie, callTex)
+            }
+        }
+        function lower(str, type, callCookie, callTex) {
+            if (type) {
+                num = str.length
+            } else {
+                num = num - 1
+            }
+            document.getElementById('text').innerHTML = document.getElementById('text').innerHTML.substring(1, document.getElementById('text').innerHTML.length - 1)
+            if (num > 0) {
+                setTimeout(function () {
+                    lower(str, false, callCookie, callTex)
+                }, 100)
+            } else {
+                higher(str, true, callCookie, callTex)
+            }
+        }
+        function set(cookie, tex) {
+            document.getElementById('text').style.opacity = 1;
+            if (localStorage.getItem('settings_ex') === '1') {
+                lower(document.getElementById('text').innerHTML, true, cookie, tex)
+            } else if (localStorage.getItem('settings_ex') === '2') {
+                localStorage.setItem('settings_ex', 1)
+            } else if (localStorage.getItem('settings_ex') === '3') {
+                setCall(cookie, tex);
+            } else if (localStorage.getItem('settings_ex') === '4') {
+                var currentPlaceIndex = 0;
+                var hasFadeOut = false;
+                var hasFadeIn = false;
+                var hasWrote = false;
+                var timeFade = 1000;
+                var fading = 'none'
+                var con = true
+                async function fadeOUT(byBody) {
+                    if (fading == 'OUT') {
+                        if (byBody) { } else {
+                            currentPlaceIndex = 100;
+                        }
+                        if (currentPlaceIndex >= 0) {
+                            document.getElementById('text').style.opacity = (currentPlaceIndex / 100)
+                            currentPlaceIndex--;
+                            await setTimeout(function () { fadeOUT(true); }, timeFade / 100);
+                        } else {
+                            setCall(cookie, tex)
+                            hasWrote = true;
+                            hasFadeOut = true;
+                            fading = 'none';
+                        }
+                    }
+                }
+                async function fadeIN(byBody) {
+                    if (fading == 'IN') {
+                        if (byBody) { } else {
+                            currentPlaceIndex = 0;
+                        }
+                        if (currentPlaceIndex <= 100) {
+                            document.getElementById('text').style.opacity = (currentPlaceIndex / 100)
+                            currentPlaceIndex++;
+                            await setTimeout(function () { fadeIN(true); }, timeFade / 100);
+                        } else {
+                            hasFadeIn = true;
+                            fading = 'none';
+                        }
+                    }
+                }
+                async function scan() {
+                    if (con) {
+                        if (fading == 'none') {
+                            var o1 = false;
+                            var o2 = true;
+                            var o3 = false;
+                            if (hasFadeIn == false) {
+                                fading = 'IN';
+                                fadeIN();
+                            } else {
+                                o3 = true;
+                            }
+                            if (hasFadeOut == false) {
+                                fading = 'OUT';
+                                fadeOUT();
+                            } else {
+                                o1 = true;
+                            }
+                            if (o1 && o2 && o3) {
+                                con = false;
+                            }
+                        }
+                        setTimeout(function () {
+                            scan()
+                        }, 25)
+                    }
+                }
+                scan();
+            }
+        }
+        var isF = true
+        function run() {
+            if (isF) {
+                isF = false
+                const last = this.localStorage.getItem('last')
+                if (last == null) {
+                    this.localStorage.setItem('last', 1)
+                } else {
+                    if (last == 1) {
+                        set(2, 'Remmber and sub to chat!')
+                    } else if (last == 2) {
+                        set(3, 'Like the stream to help it grow!')
+                    } else if (last == 3) {
+                        set(4, 'Be respectful!')
+                    } else if (last == 4) {
+                        set(5, 'Only comment your user every five minutes')
+                    } else if (last == 5) {
+                        set(6, 'Share this stream!')
+                    } else if (last == 6) {
+                        set(1, 'Do not spam in the chat!')
+                    }
+                }
+                function wait1ms() {
+                    currtimer = currtimer - 5
+                    if (currtimer < 0) {
+                        currtimer = upEvery
+                        isF = true
+                        run()
+                    } else {
+                        setTimeout(function () {
+                            wait1ms();
+                        }, 1)
+                    }
+                }
+                wait1ms()
+            }
+        }
+        function startCookie() {
+            var value1 = '&boxminus;';
+            if (localStorage.getItem('settings_ex') === '1') {
+                value1 = '&boxplus;'
+            }
+            document.getElementById('exa').innerHTML = (document.getElementById('exa').innerHTML.substring(0)) + value1
+            var value2 = '&boxminus;';
+            if (localStorage.getItem('settings_ex') === '2') {
+                value2 = '&boxplus;'
+            }
+            document.getElementById('exb').innerHTML = (document.getElementById('exb').innerHTML.substring(0)) + value2
+            var value3 = '&boxminus;';
+            if (localStorage.getItem('settings_ex') === '3') {
+                value3 = '&boxplus;'
+            }
+            document.getElementById('exc').innerHTML = (document.getElementById('exc').innerHTML.substring(0)) + value3
+            var value4 = '&boxminus;';
+            if (localStorage.getItem('settings_ex') === '4') {
+                value4 = '&boxplus;'
+            }
+            document.getElementById('exd').innerHTML = (document.getElementById('exd').innerHTML.substring(0)) + value4
+            if (localStorage.getItem('settings_ex') === null) {
+                localStorage.setItem('settings_ex', 3)
+            }
+            run()
+        }
+    </script>
+    <script>
+        var isSettingOpen = false
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode == 70) {
+                if (isSettingOpen) {
+                    isSettingOpen = false;
+                    location.reload();
+                } else {
+                    isSettingOpen = true;
+                    document.getElementById('appsetting').style.display = 'block';
+                    document.getElementById('rest').style.display = 'none';
+                }
+            }
+        });
+        function setDebug() {
+            document.getElementById('debugInfo').innerHTML = `location:` + localStorage.getItem('last') + `<br>type:` + localStorage.getItem('settings_ex') + `<br>time:` + time + `<br>debug: true<br>Updates:` + setTimeout(function () { setDebug(); }, 10) + `<br>Settings display:` + document.getElementById('appsetting').style.display + `<br>UEVY:` + upEvery + `<br>NEXT:` + currtimer + `<br>Width:` + window.innerWidth + `<br>Height:` + window.innerHeight + `<br>Total:` + window.innerWidth + `X` + window.innerHeight + `<br>IsBroken:` + window.isNaN() + `<br>C:` + document.cookie.length + `<br>Ratio:` + devicePixelRatio + `<br>Focus:` + document.hasFocus()
+        }
+        setTimeout(function () {
+            if (localStorage.getItem('settings_deb') == 1) {
+                document.getElementById.getElementById('h1debug').innerHTML = "DEBUG MODE";
+                setDebug();
+            } else {
+                document.getElementById('debug').style.display = 'none';
+            }
+        }, 5000)
+        function setDEB() {
+            if (localStorage.getItem('settings_deb') == 1) {
+                localStorage.setItem('settings_deb', 0)
+            } else {
+                localStorage.setItem('settings_deb', 1)
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        #bg {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+        }
+
+        #text {
+            color: aqua;
+            position: absolute;
+            top: 50vh;
+            text-align: center;
+            width: 62vw;
+            font-size: 4vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .patch {
+            width: 20vw;
+            height: 1vh;
+            position: absolute;
+            background-color: #2475a8;
+            z-index: 2;
+            left: 42vw;
+        }
+
+        .username {
+            color: rgb(59, 174, 174);
+            position: absolute;
+            top: 81vh;
+            left: 10vw;
+            font-size: 4vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .SetI {
+            font-size: xx-large;
+        }
+
+        #settings {
+            background-color: red;
+            width: 100vw;
+            height: 100vh;
+            color: aqua;
+            text-align: center;
+        }
+
+        #debug {
+            color: red;
+            position: absolute;
+            z-index: 99;
+        }
+
+        #debugInfo {
+            text-align: center;
+            position: absolute;
+            width: 25vw;
+            left: 75vw;
+            font-size: x-large;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body onload="startCookie()">
-<div class="patch"></div>
-<img id="bg" src="Screenshot 2023-02-16 220332.png"></img>
-<h1 id='text'></h1>
-<h1 class="username">samidemir09 Gaming</h1>
+    <div id="debug">
+        <h1 id="h1debug"></h1>
+        <p id="debugInfo">initilising</p>
+    </div>
+    <div id="appsetting" style="display:none;">
+        <div id="settings">
+            <h1>SETTINGS(press f again to save)</h1>
+            <button class="SetI" id="exa"
+                onclick="localStorage.setItem('settings_ex',1)">extrude(both)&nbsp;&nbsp;&nbsp;</button><br>
+            <button class="SetI" id="exb"
+                onclick="localStorage.setItem('settings_ex',2)">extrude(left)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&boxtimes;</button><br>
+            <button class="SetI" id="exc"
+                onclick="localStorage.setItem('settings_ex',3)">Flash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+            <button class="SetI" id="exd"
+                onclick="localStorage.setItem('settings_ex',4)">Fade&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+            <!-- <button class="SetI" id="">implode(left)&nbsp;&nbsp;&nbsp;&nbsp;&boxminus;</button><br> -->
+            <hr>
+            <hr>
+            <button class="SetI" id="DEB" onclick="setDEB()">DEBUG MODE</button><br>
+        </div>
+    </div>
+    <div id="rest">
+        <div class="patch"></div>
+        <img id="bg" src="Screenshot 2023-02-16 220332.png"></img>
+        <h1 id='text'></h1>
+        <h1 class="username">samidemir09 Gaming</h1>
+    </div>
 </body>
 </html>
