@@ -172,7 +172,7 @@
                 wait1ms()
             }
         }
-        function startCookie() {
+        function updateSettings() {
             var value1 = '&boxminus;';
             if (localStorage.getItem('settings_ex') === '1') {
                 value1 = '&boxplus;'
@@ -193,6 +193,9 @@
                 value4 = '&boxplus;'
             }
             document.getElementById('exd').innerHTML = (document.getElementById('exd').innerHTML.substring(0)) + value4
+        }
+        function startCookie() {
+            updateSettings();
             if (localStorage.getItem('settings_ex') === null) {
                 localStorage.setItem('settings_ex', 3)
             }
@@ -214,7 +217,7 @@
             }
         });
         function setDebug() {
-            document.getElementById('debugInfo').innerHTML = `location:` + localStorage.getItem('last') + `<br>type:` + localStorage.getItem('settings_ex') + `<br>time:` + time + `<br>debug: true<br>Updates:` + setTimeout(function () { setDebug(); }, 10) + `<br>Settings display:` + document.getElementById('appsetting').style.display + `<br>UEVY:` + upEvery + `<br>NEXT:` + currtimer + `<br>Width:` + window.innerWidth + `<br>Height:` + window.innerHeight + `<br>Total:` + window.innerWidth + `X` + window.innerHeight + `<br>IsBroken:` + window.isNaN() + `<br>C:` + document.cookie.length + `<br>Ratio:` + devicePixelRatio + `<br>Focus:` + document.hasFocus()
+            document.getElementById('debugInfo').innerHTML = `location:` + localStorage.getItem('last') + `<br>type:` + localStorage.getItem('settings_ex') + `<br>time:` + time + `<br>debug: true<br>Updates:` + setTimeout(function () { setDebug(); }, 10) + `<br>Settings display:` + document.getElementById('appsetting').style.display + `<br>UEVY:` + upEvery + `<br>NEXT:` + currtimer + `<br>Width:` + window.innerWidth + `<br>Height:` + window.innerHeight + `<br>Total:` + window.innerWidth + `X` + window.innerHeight + `<br>Works:` + window.isNaN() + `<br>C:` + document.cookie.length + `<br>Ratio:` + devicePixelRatio + `<br>Focus:` + document.hasFocus()
         }
         setTimeout(function () {
             if (localStorage.getItem('settings_deb') == 1) {
@@ -231,6 +234,26 @@
                 localStorage.setItem('settings_deb', 1)
             }
         }
+    </script>
+    <script>
+        setTimeout(function () {
+            function waitTillUpdateD() {
+                if (localStorage.getItem('settings_deb') == 1) {
+                    document.getElementById('isDEBEN').innerHTML = 'true';
+                } else {
+                    document.getElementById('isDEBEN').innerHTML = 'false';
+                }
+                document.getElementById("exa").innerHTML = "extrude(both)&nbsp;&nbsp;&nbsp;";
+                document.getElementById("exb").innerHTML = "extrude(left)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&boxtimes;";
+                document.getElementById("exc").innerHTML = "Flash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                document.getElementById("exd").innerHTML = "Fade&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                updateSettings();
+                setTimeout(function () {
+                    waitTillUpdateD()
+                }, 20)
+            }
+            waitTillUpdateD();
+        }, 5000)
     </script>
     <style>
         body {
@@ -323,7 +346,8 @@
                 onclick="localStorage.setItem('settings_ex',4)">Fade&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br>
             <hr>
             <hr>
-            <button class="SetI" id="DEB" onclick="setDEB()">DEBUG MODE</button><br>
+            <button class="SetI" id="DEB" onclick="setDEB()">DEBUG MODE</button>
+            <p id="isDEBEN">false</p><br>
         </div>
     </div>
     <div id="rest">
@@ -333,4 +357,5 @@
         <h1 class="username">samidemir09 Gaming</h1>
     </div>
 </body>
+
 </html>
