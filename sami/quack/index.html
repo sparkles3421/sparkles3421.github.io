@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>duck talk</title>
+    <style>
+        body{
+            background-color: black;
+            overflow: hidden;
+            margin: 0px;
+            align-items:center;
+        }
+        textarea{
+            width:99vw;
+            height: 45vh;
+            border-radius: 10px;
+            resize: none;
+            background-color: gray;
+            color: white;
+        }
+        p{
+            font-size: 2.5vh;
+            color:aliceblue;
+            margin: 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function tr(ty,sp) {
+            if(ty==1){
+                document.getElementById('duk').value = ''
+                for(var c=0;c<document.getElementById(sp).value.length;c++){
+                    var char = document.getElementById(sp).value.charAt(c)
+                    if(char=='\n'){
+                        document.getElementById('duk').value += '\n'
+                    } else {
+                        if(char==' '){
+                            document.getElementById('duk').value += 'QuACK'
+                        }
+                        if(char=='a') {
+                            document.getElementById('duk').value += 'quack'
+                        }
+                        if(char=='b') {
+                            document.getElementById('duk').value += 'Quack'
+                        }
+                        if(char=='c') {
+                            document.getElementById('duk').value += 'QUack'
+                        }
+                        if(char=='d') {
+                            document.getElementById('duk').value += 'QUAck'
+                        }
+                        if(char=='e') {
+                            document.getElementById('duk').value += 'QUACk'
+                        }
+                        if(char=='f') {
+                            document.getElementById('duk').value += 'QUACK'
+                        }
+                        if(char=='g') {
+                            document.getElementById('duk').value += 'qUACK'
+                        }
+                        if(char=='h') {
+                            document.getElementById('duk').value += 'QuACk'
+                        }
+                        if(char=='i') {
+                            document.getElementById('duk').value += 'quaCK'
+                        }
+                        if(char=='j') {
+                            document.getElementById('duk').value += 'quacK'
+                        }
+                        if(char=='k') {
+                            document.getElementById('duk').value += 'qUaCk'
+                        }
+                        if(char=='l') {
+                            document.getElementById('duk').value += 'QUaCk'
+                        }
+                        if(char=='m') {
+                            document.getElementById('duk').value += 'QUAcK'
+                        }
+                        if(char=='n') {
+                            document.getElementById('duk').value += 'qUack'
+                        }
+                        if(char=='o') {
+                            document.getElementById('duk').value += 'quAck'
+                        }
+                        if(char=='p') {
+                            document.getElementById('duk').value += 'quaCk'
+                        }
+                        if(char=='q') {
+                            document.getElementById('duk').value += 'quacK'
+                        }
+                        if(char=='r') {
+                            document.getElementById('duk').value += 'quAcK'
+                        }
+                        if(char=='s') {
+                            document.getElementById('duk').value += 'QuAcK'
+                        }
+                        if(char=='t') {
+                            document.getElementById('duk').value += 'QUacK'
+                        }
+                        if(char=='u') {
+                            document.getElementById('duk').value += 'quACk'
+                        }
+                        if(char=='v') {
+                            document.getElementById('duk').value += 'qUACk'
+                        }
+                        if(char=='w') {
+                            document.getElementById('duk').value += 'QUaCK'
+                        }
+                        if(char=='x') {
+                            document.getElementById('duk').value += 'QuaCK'
+                        }
+                        if(char=='y') {
+                            document.getElementById('duk').value += 'QuaCk'
+                        }
+                        if(char=='z') {
+                            document.getElementById('duk').value += 'QuAck'
+                        }
+                    }
+                }
+            } else {
+                document.getElementById('eng').value = ''
+                for(var c=0;c<document.getElementById(sp).value.length;c+=5){
+                    var char = document.getElementById(sp).value.substring(c,c+5)
+                    if(char=='\n'){
+                        document.getElementById('eng').value += '\n'
+                    } else {
+                        if(char=='QuACk') {
+                            console.log('h')
+                            document.getElementById('eng').value += 'h'
+                        }
+                        if(char=='QuACK'){
+                            document.getElementById('eng').value += ' '
+                        }
+                        if(char=='quack') {
+                            document.getElementById('eng').value += 'a'
+                        }
+                        if(char=='Quack') {
+                            document.getElementById('eng').value += 'b'
+                        }
+                        if(char=='QUack') {
+                            document.getElementById('eng').value += 'c'
+                        }
+                        if(char=='QUAck') {
+                            document.getElementById('eng').value += 'd'
+                        }
+                        if(char=='QUACk') {
+                            document.getElementById('eng').value += 'e'
+                        }
+                        if(char=='QUACK') {
+                            document.getElementById('eng').value += 'f'
+                        }
+                        if(char=='qUACK') {
+                            document.getElementById('eng').value += 'g'
+                        }
+                        if(char=='quaCK') {
+                            document.getElementById('eng').value += 'i'
+                        }
+                        if(char=='quacK') {
+                            document.getElementById('eng').value += 'j'
+                        }
+                        if(char=='qUaCk') {
+                            document.getElementById('eng').value += 'k'
+                        }
+                        if(char=='QUaCk') {
+                            document.getElementById('eng').value += 'l'
+                        }
+                        if(char=='QUAcK') {
+                            document.getElementById('eng').value += 'm'
+                        }
+                        if(char=='qUack') {
+                            document.getElementById('eng').value += 'n'
+                        }
+                        if(char=='quAck') {
+                            document.getElementById('eng').value += 'o'
+                        }
+                        if(char=='quaCk') {
+                            document.getElementById('eng').value += 'p'
+                        }
+                        if(char=='quacK') {
+                            document.getElementById('eng').value += 'q'
+                        }
+                        if(char=='quAcK') {
+                            document.getElementById('eng').value += 'r'
+                        }
+                        if(char=='QuAcK') {
+                            document.getElementById('eng').value += 's'
+                        }
+                        if(char=='QUacK') {
+                            document.getElementById('eng').value += 't'
+                        }
+                        if(char=='quACk') {
+                            document.getElementById('eng').value += 'u'
+                        }
+                        if(char=='qUACk') {
+                            document.getElementById('eng').value += 'v'
+                        }
+                        if(char=='QUaCK') {
+                            document.getElementById('eng').value += 'w'
+                        }
+                        if(char=='QuaCK') {
+                            document.getElementById('eng').value += 'x'
+                        }
+                        if(char=='QuaCk') {
+                            document.getElementById('eng').value += 'y'
+                        }
+                        if(char=='QuAck') {
+                            document.getElementById('eng').value += 'z'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <p>enter english(click here to translate):</p>
+    <div class="left">
+        <textarea id="eng" onchange="tr(1,'eng')" placeholder="english"></textarea>
+    </div>
+    <p>enter duck(click here to translate):</p>
+    <div class="left">
+        <textarea id="duk" onchange="tr(2,'duk')"placeholder="duck"></textarea>
+    </div>
+</body>
+</html>
