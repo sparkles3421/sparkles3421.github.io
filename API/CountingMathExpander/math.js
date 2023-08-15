@@ -93,7 +93,7 @@ function calculateHardest(target, firs) {
         var timeout = 0
         while (target != number) {
             timeout++
-            if(timeout>40) {
+            if(timeout>10) {
                 break
             }
             if (number < target) {
