@@ -14,7 +14,7 @@ function calculateHardest(target, firs) {
             console.log(e >= target.toString().length)
             console.log(target.toString().length)
             host = local
-            host = host + "*10^" + target.toString().length + "-7"
+            host = math.ceil(host) + "*10^" + target.toString().length + "-7"
             mathequasion = host
             console.log(mathequasion)
             console.log(mathequasion.replace("^", "**"))
@@ -30,7 +30,7 @@ function calculateHardest(target, firs) {
         number = eval(mathequasion.replace("^", "**"))
         index++
         if (target < number) {
-            
+
             if (Math.round(Math.random()) == 1) {
                 if (Math.round(Math.random())  > 1) {
                     const numb = Math.floor(Math.random() * 100000)
