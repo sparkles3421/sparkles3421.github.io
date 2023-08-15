@@ -135,7 +135,10 @@ function butt() {
     const button = document.getElementById("butt")
     const val = document.getElementById("text")
     const out = document.getElementById("output")
-    out.innerHTML = calculateHardest(val.value,true)
+    out.value = calculateHardest(val.value,true)
+    out.select();
+    out.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(out.value);
 }
 function upd() {
     const val = document.getElementById("text")
