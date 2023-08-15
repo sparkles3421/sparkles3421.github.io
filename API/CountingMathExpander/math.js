@@ -14,7 +14,7 @@ function calculateHardest(target, firs) {
             console.log(e >= target.toString().length)
             console.log(target.toString().length)
             host = local
-            host = math.ceil(host) + "*10^" + target.toString().length + "-7"
+            host = Math.ceil(host) + "*10^" + target.toString().length + "-7"
             mathequasion = host
             console.log(mathequasion)
             console.log(mathequasion.replace("^", "**"))
