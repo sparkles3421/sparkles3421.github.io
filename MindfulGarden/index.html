@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Example</title>
+    <style>
+        .start {
+            transition-duration: 500ms;
+            background-color: cyan;
+            position: absolute;
+            left: 40vw;
+            top: 40vh;
+            width: 20vw;
+            height: 10vh;
+            text-align: left;
+            font-size: 5vh;
+        }
+
+        .started {
+            transition-duration: 500ms;
+            background-color: transparent;
+            color: transparent;
+            position: absolute;
+            left: 40vw;
+            top: 40vh;
+            width: 20vw;
+            height: 10vh;
+            text-align: left;
+            font-size: 0vh;
+            border-color: transparent;
+        }
+
+        .start:hover {
+            background-color: blue;
+        }
+
+        .startSVG {
+            transition-duration: 500ms;
+            width: 5vw;
+            height: 5vh;
+            position: absolute;
+            left: 55vw;
+            top: 42.5vh
+        }
+
+        .startedSVG {
+            transition-duration: 500ms;
+            width: 5vw;
+            height: 5vh;
+            position: absolute;
+            left: 55vw;
+            top: 42.5vh;
+            background-color: transparent;
+            color: transparent;
+            display: none;
+            touch-action: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="start" onclick="START()">Enter Garden</button>
+    <svg xmlns="http://www.w3.org/2000/svg" class="startSVG" viewBox="0 0 26 26">
+        <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
+        <path class="play-btn__svg"
+            d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
+    </svg>
+    <script>
+        var started;
+        const ToSay = ["remember to take deep breaths"]
+        var saidLast = ""
+        function LPSpeak() {
+            const utterance = new SpeechSynthesisUtterance(textToRead);
+            utterance.volume = 0.2
+            window.speechSynthesis.speak(utterance);
+            //SetInterval not used for random timing.
+            setTimeout(function () { LPSpeak() }, (30 + (Math.random())) * 1000)
+            return "Please dont run commands in the console."
+        }
+        function START() {
+            if (started !== true) {
+                started = true
+                //SetInterval not used for random timing.
+                document.getElementsByClassName("start")[0].className = "started"
+                document.getElementsByClassName("startSVG")[0].remove()
+                setTimeout(function () { LPSpeak() }, (30 + (Math.random())) * 1000)
+                return "Please dont run commands in the console."
+            }
+        }
+    </script>
+
+
+
+    <!--GOOGLE ANALYTICS(Error reporting)-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEN4JTCVNS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TEN4JTCVNS');
+    </script>
+</body>
+
+</html>
