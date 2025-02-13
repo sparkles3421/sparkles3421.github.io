@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head oncontextmenu="return false;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"">
+    <title>Sandustry World/Save Editor</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(16, 16, 16);
+            color: white;
+        }
+
+        #editor {
+            background-color: aquamarine;
+            background-image: url("tiles/mountains_tiling.png");
+            background-repeat: repeat-x;
+            background-size: 40%;
+            background-position-y: 180%;
+            position: absolute;
+        }
+
+        #nonwipemask {
+            z-index: 2;
+            background-color: transparent;
+            position: absolute;
+        }
+
+        #transparent {
+            z-index: 3;
+            background-color: transparent;
+            position: absolute;
+        }
+
+        #loadFS {
+            z-index: 45;
+            position: absolute;
+            left: 40vw;
+            top: 50vh;
+            height: 20vh;
+            width: 50vw;
+            font-size: 1.5vw;
+        }
+
+        #backgroundGrabber {
+            z-index: 40;
+            color: transparent;
+            position: absolute;
+            top: -100px;
+            left: 0px;
+            width: 100vw;
+            height: 200vh;
+        }
+
+        input[type="file"] {
+            margin: 0;
+        }
+
+        #loadTXT {
+            z-index: 30;
+            position: absolute;
+            top: 34vh;
+            height: 5vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 4vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #loadTXT2 {
+            z-index: 30;
+            position: absolute;
+            top: 54vh;
+            height: 5vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 4vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #loadTXT3 {
+            z-index: 30;
+            position: absolute;
+            top: 74vh;
+            height: 5vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 2vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:blue
+        }
+
+        #Create {
+            color: red;
+            z-index: 50;
+            position: absolute;
+            top: 65vh;
+            height: 10vh;
+            width: 25vw;
+            left: 37.5vw;
+            text-align: center;
+            font-size: 6vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url("tiles/CreateWorld.png");
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 0px;
+            /* border: none; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+
+        #ToolTip {
+            z-index: 5;
+            position: absolute;
+            left: 0vw;
+            top: 5vh;
+            height: 5vh;
+            width: 50vw;
+            font-size: 3vh;
+            color: gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .topBar {
+            width: 100vw;
+            height: 8vh;
+            position: absolute;
+            left: 0vw;
+            top: 0vh;
+            background-color: rgb(149, 149, 149);
+            z-index: 99;
+        }
+
+        button {
+            aspect-ratio: 1;
+            height: 5vh;
+            position: relative;
+            top: 1.5vh;
+            left: 1vw;
+            border-radius: 3px;
+        }
+
+        button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tbbtnL {
+            position: absolute;
+            left: 95vw;
+        }
+        .tbbtnL2 {
+            position: absolute;
+            left: 92vw;
+            height: 5vh;
+        }
+        .tbbtnM {
+            position:absolute;
+            left:50%;
+            width:16%;
+            font-size: 70%;
+            transform: translate(-50%,0%);
+            background-color: red;
+        }
+        img {
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            -ms-interpolation-mode: nearest-neighbor;
+            image-rendering: pixelated;
+        }
+
+        canvas {
+            image-rendering: pixelated;
+        }
+
+        .vignette {
+            z-index: 100;
+            background-color: #0000008c;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .vignette ***** {
+            transition: 50ms;
+        }
+        #close {
+            position: absolute;
+            left: 96.5vw;
+            top: 2vh;
+            background-color: red;
+        }
+
+        #menuObj {
+            text-align: center;
+            font-size: 4vh;
+            position: absolute;
+            top: 5vh;
+            width: 100vw;
+            height: 5vh;
+        }
+
+        #menuObj i {
+            font-size: 2vh;
+        }
+
+        #menu #menuObj {
+            color: yellow
+        }
+
+        #export #menuObj {
+            color: yellow;
+            top: -2vh;
+            left: -46vw;
+            font-weight: 1000;
+        }
+
+        #export {
+            background-color: #0000008c;
+            min-width: 50vw;
+            height: 50vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #export hr {
+            position: relative;
+            top:15%;
+            border-color: black;
+            border-style: groove;
+            padding: 0px;
+            margin: 0px;
+        }
+        #export #close {
+            left: 94%;
+            top: 1vh;
+        }
+
+        #ef,
+        #ei {
+            position: relative;
+            width: 45%;
+            padding: 0px;
+            margin:0px;
+            margin-right: 5%;
+            font-size: 100%;
+            border-radius: 1vw;
+            top:20%;
+            height: 10%;
+        }
+        #export label {
+            position: relative;
+            top: 30%;
+            left:10%;
+            word-wrap:normal;
+        }
+        #EPS {
+            position: relative;
+            top: 35%;
+            width:95%;
+            height:12%;
+            background-color: green;
+            border-radius: 5vw;
+        }
+        #warn {
+            position: relative;
+            left:-5%;
+        }
+        #helper {
+            position: absolute;
+            width: 100vw;
+            height: 5vh;
+            font-size: 2vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition: 500ms;
+            padding: 0px;
+            text-align: center;
+            z-index: 20;
+            color: green;
+            text-shadow: 0px 0px 10px;
+        }
+        #Selected {
+            height:5vh;
+        }
+        #blockPicker {
+            background-color: #0000008c;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vw;
+            height: 80vh;
+            align-items: center;
+            justify-self: center;
+            z-index: 50;
+        }
+        #blockPicker p {
+            margin: 4px;
+        }
+        #blockPicker button {
+            position: relative;
+            top:-2%;
+            left: 0%;
+            margin: 1%;
+            width: 31%;
+            height: 6%;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+        #Size {
+            position: relative;
+            top:4%;
+        }
+        #settings #menuObj {
+            color: red;
+            font-weight: 1000;
+        }
+        #settings label {
+            position: relative;
+            left:38%;
+            transform: translate(-50%,0);
+        }
+        #settings button {
+            position: relative;
+            left: 40%;
+            width:20%;
+            background-color: green;
+        }
+        #set img {
+            width: 1.5vw;
+        }
+        #fw {
+            width:30%;
+            aspect-ratio: 1 / 1;
+            background-color: darkcyan;
+        }
+        #lw {
+            width:30%;
+            aspect-ratio: 1 / 1;
+            background-color: rgb(255,255,255);
+        }
+        #sw {
+            width:30%;
+            aspect-ratio: 1 / 1;
+            background-color: transparent;
+        }
+        #aw {
+            width:30%;
+            aspect-ratio: 1 / 1;
+            background-color: transparent;
+        }
+        #ft {
+            width:30%;
+            aspect-ratio: 1 / 1;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+    <h1 id="helper" style="top:0vh">hello</h1>
+    <div class="topBar">
+        <button title="(p)Move player to mouse" id="mv"><img src="./tiles/player.png"></button>
+        <button title="(m)Use LMB,MMB,RMB to move the camera" id="move"><img src="./tiles/MoveCamera.png"></button>
+        <button title="(v)Use Left Click to paint the selected block" id="erase"><img src="./tiles/Erase.png"></button>
+        <button title="(b)Use Left Click to paint the selected block" id="brush"><img src="./tiles/Brush.png"></button>
+        <button title="(n)Use Left Click to paint the selected block" id="rect"><img src="./tiles/Rect.png"></button>
+        <button title="(e, alt e, alt q)The block to paint" id="Block"><img style="background-color: black;"></button>
+        <button title="(shift+scroll)Scroll to change!" style="color:antiquewhite" id="Size">5px</button>
+        <button title="Change Settings" id="set" class="tbbtnL2"><img src="./tiles/Settings.png"></button>
+        <button title="Export changes" id="es" class="tbbtnL"><img src="./tiles/export.png"></button>
+        <button title="Refresh the viewport " id="RL" class="tbbtnM">Refresh Viewport</button>
+        <p style="display:none;text-align:center;width:100vw;height:100%;position:absolute;left:0px;top:0px;z-index:-1;" id="fps">0 fps</p>
+    </div>
+    <canvas style="z-index: -5; width: 100vw;height: 100vh;background-color: transparent;position: absolute;"></canvas> <!--This disables RMB menu for moving-->
+    <canvas id="editor" style="width: 100vw;height: 100vh;"></canvas>
+    <canvas id="nonwipemask" style="width: 100vw;height: 100vh;"></canvas>
+    <canvas id="transparent" style="width: 100vw;height: 100vh;"></canvas>
+    <p id="ToolTip">x:0, y:0</p>
+    <div id="blockPicker" style="display: none;"><p>select or esc to close</p><br></div>
+    <div class="vignette" id="ac" style="display: block;">
+        <div id="menu" style="display: block;">
+            <p id="menuObj">Sandustry Save Editor <i>(v0.8 alpha unpolished)</i></p>
+            <input type="file" id="loadFS" onchange="load(this)" title="filename.save" accept=".save">
+            <input type="file" id="backgroundGrabber" onclick="return false" onchange="load(this)">
+            <p id="loadTXT">Insert your .save by dropping it or browsing!<br><i style="font-size: 2vh;">Game >Load >Click World > Export ;)</i></p>
+            <p id="loadTXT2">or, generate/make a custom world!</p>
+            <button id="Create">Create World!</button>
+            <p id="loadTXT3">(World Creation coming soon)<br>(you can still load another save and then export>image>Export)</p>
+        </div>
+        <div id="export" style="display: none;"></div>
+        <div id="settings" style="display: none;">
+            <p id="menuObj">Settings</p><br><br><br><br><br><br>
+                <label><input type="checkbox" title="Toggle Only Structure" id="rendstruct">Only render structures</label>
+            <br><label><input type="checkbox" checked="true" title="Toggle Outlines" id="outline">Render Outlines</label>
+            <br><label><input type="checkbox" title="Toggle Re-Rendering" id="rerender">Re-Render World after change</label>
+            <br><label><input type="checkbox" checked="true" title="Toggle ToolTip" id="tooltip">Tool Tip Visible</label>
+            <br><label><input type="checkbox" checked="true" title="Toggle Helper" id="toghelp">Green Text Helper for welcome and block select</label>
+            <br><label><input type="checkbox" title="Disable welcome" id="DW">Disable the welcome message</label>
+            <br><br>
+            <br><label><input type="checkbox" title="Enable Potato Potato Quality" id="PP">Potato Potato</label>
+            <br><label><input type="checkbox" title="Enable Potato Quality" id="LP">Potato</label>
+            <br><label><input type="checkbox" title="Enable Low Quality" id="LQ">Low Quality</label>
+            <br><label><input type="checkbox" checked="true" title="Enable Normal Quality" id="NQ">Normal Quality</label>
+            <br><label><input type="checkbox" title="Enable High Quality" id="HQ">High Quality</label>
+            <br><button id="setsave">Save</button>
+        </div>
+    </div>
+    <script src="./editor.js"></script>
+</body>
+
+</html>
